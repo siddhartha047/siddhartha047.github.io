@@ -1,0 +1,31 @@
+name: Siddhartha Shankar Das
+role: Postdoctoral Researcher
+affiliation: Pacific Northwest National Laboratory
+summary: Siddhartha Shankar Das is a Postdoctoral Researcher at Pacific Northwest National Laboratory. His research focuses on scalable graph learning, graph neural networks, graph sparsification, cybersecurity, scientific AI, and high-performance computing. His work develops efficient machine learning and graph algorithms for large-scale scientific and security applications.
+bio:
+  - Siddhartha Shankar Das is a Postdoctoral Researcher at Pacific Northwest National Laboratory. His research focuses on scalable graph learning, graph neural networks, graph sparsification, cybersecurity, scientific AI, and high-performance computing. His work develops efficient machine learning and graph algorithms for large-scale scientific and security applications.
+  - He also works on hardware/software partitioning and circuit representation learning, with an emphasis on scalable methods that connect graph structure, systems constraints, and domain knowledge to practical scientific and security workloads.
+research_focus:
+  - Scalable graph learning
+  - Graph neural networks
+  - Graph sparsification
+  - Cybersecurity
+  - Scientific AI
+  - High-performance computing
+image: /assets/images/profile.jpg
+links:
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=kTAFl2yYe6QC&hl=en
+    icon: ai ai-google-scholar
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/siddhartha-shankar-das-25993b110/
+    icon: fa-brands fa-linkedin-in
+  - label: GitHub
+    url: https://github.com/siddhartha047/
+    icon: fa-brands fa-github
+  - label: Old Website
+    url: https://sites.google.com/site/siddhartha047/
+    icon: fa-solid fa-globe
+cv_external: https://drive.google.com/file/d/16W38bReleQu5PI8YTFXDxWTTpACQkhz2/view?usp=sharing
+cv_local: /assets/files/Siddhartha_Das_CV.pdf
+contact_note: Please use the professional links below for now. A direct email address can be added later in this file if desired.

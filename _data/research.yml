@@ -1,0 +1,11 @@
+areas:
+  - title: Scalable Graph Learning
+    description: Efficient machine learning methods for large graphs, with a focus on performance, scalability, and robust representation quality.
+  - title: Graph Sparsification for GNNs
+    description: Structure-aware sparsification methods that retain task-relevant signal while reducing graph size and computational cost.
+  - title: Cybersecurity AI
+    description: AI systems for vulnerability analysis, weakness mapping, attack pattern understanding, and security knowledge extraction.
+  - title: Scientific AI and High-Performance Computing
+    description: Scalable AI systems for scientific workloads that benefit from strong algorithmic design and high-performance computing principles.
+  - title: Hardware/Software Partitioning and Circuit Representation Learning
+    description: Graph-centric learning methods for circuit understanding, equivalent checking, and hardware/software co-design decisions.

@@ -1,0 +1,21 @@
+items:
+  - name: Mohammad Fakhruddin Babar
+    affiliation: Washington State University
+    period: FY2025
+    summary: Mentored cybersecurity prioritization work; CCS 2026 submission under review.
+  - name: Sai Karthik
+    affiliation: UT Dallas
+    period: FY2026
+    summary: Mentoring Encode/circuit representation learning, equivalent checking, and support-graph sparsification for GNNs.
+  - name: Tamim Ahmed
+    affiliation: Washington State University
+    period: FY2026
+    summary: Mentoring cybersecurity root-cause analysis for vulnerability-to-weakness mapping.
+  - name: Mukundan Adi
+    affiliation: University of Iowa, MS Computer Science
+    period: FY2026
+    summary: Mentoring cybersecurity knowledge graph construction.
+  - name: Moqsudur Rahman
+    affiliation: University of Texas at El Paso, PhD Computer Science
+    period: FY2025
+    summary: Mentoring cybersecurity attack pattern analysis.

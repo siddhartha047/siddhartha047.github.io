@@ -1,0 +1,32 @@
+title: Siddhartha Shankar Das
+description: Postdoctoral Researcher at Pacific Northwest National Laboratory
+url: "https://siddhartha047.github.io"
+baseurl: ""
+author: Siddhartha Shankar Das
+lang: en
+repository: siddhartha047/siddhartha047.github.io
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+permalink: pretty
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+exclude:
+  - .bundle
+  - .jekyll-cache/
+  - .sass-cache/
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md

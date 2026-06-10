@@ -1,0 +1,107 @@
+# Publications, al-folio style (thumbnail + title/authors/venue + link badges).
+# Your own name is wrapped in <strong> so it renders in bold.
+# Per entry:
+#   preview : optional thumbnail under /assets/images/pubs/ (falls back to a placeholder)
+#   links   : optional list of { label, url } badges (PDF, arXiv, Code, ...)
+#   selected: shows the entry on the homepage
+items:
+  - title: "SGS-GNN: A Supervised Graph Sparsification method for Graph Neural Networks"
+    authors: "<strong>S. S. Das</strong>, N. A. Arafat, M. Rahman, S. M. Ferdous, A. Pothen, M. Halappanavar"
+    venue: KDD 2026 Research Track
+    year: 2026
+    category: conference
+    selected: true
+    preview: /assets/images/pubs/sgs-gnn.png
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2502.10208
+
+  - title: "AGS-GNN: Attribute-guided Sampling for Graph Neural Networks"
+    authors: "<strong>S. S. Das</strong>, S. M. Ferdous, M. Halappanavar, E. Serra, A. Pothen"
+    venue: ACM SIGKDD 2024
+    year: 2024
+    category: conference
+    selected: true
+    preview: /assets/images/pubs/ags-gnn.png
+
+  - title: "V2W-BERT: A Framework for Effective Hierarchical Multiclass Classification of Software Vulnerabilities"
+    authors: "<strong>S. S. Das</strong>, E. Serra, M. Halappanavar, A. Pothen, E. Al-Shaer"
+    venue: IEEE DSAA 2021
+    year: 2021
+    category: conference
+    selected: true
+    preview: /assets/images/pubs/v2w-bert.png
+    links:
+      - label: arXiv
+        url: https://arxiv.org/abs/2102.11498
+
+  - title: "VWC-BERT: Scaling Vulnerability–Weakness–Exploit Mapping on Modern AI Accelerators"
+    authors: "<strong>S. S. Das</strong>, M. Halappanavar, A. Tumeo, E. Serra, A. Pothen, E. Al-Shaer"
+    venue: IEEE International Conference on Big Data 2022
+    year: 2022
+    category: conference
+    selected: true
+    preview: /assets/images/pubs/vwc-bert.png
+
+  - title: "Towards Automatic Mapping of Vulnerabilities to Attack Patterns using Large Language Models"
+    authors: "<strong>S. S. Das</strong>, A. Dutta, S. Purohit, E. Serra, M. Halappanavar, A. Pothen"
+    venue: IEEE International Symposium on Technologies for Homeland Security (HST) 2022
+    year: 2022
+    category: conference
+    selected: false
+
+  - title: "Efficient Clustering of Software Vulnerabilities using Self Organizing Map (SOM)"
+    authors: "K. Panchal, <strong>S. S. Das</strong>, L. De La Torre, J. Miller, R. Rallo, M. Halappanavar"
+    venue: IEEE International Symposium on Technologies for Homeland Security (HST) 2022
+    year: 2022
+    category: conference
+    selected: false
+
+  - title: "Exploiting a Synergy between Greedy Approach and NSGA for Scheduling in Computing Clusters"
+    authors: "A. S. M. Rizvi, T. R. Toha, <strong>S. S. Das</strong>, S. Chellappan, A. B. M. A. Al Islam"
+    venue: International Conference on Networking, Systems and Security (NSysS) 2018
+    year: 2018
+    category: conference
+    selected: false
+
+  - title: "Many-objective performance enhancement in computing clusters"
+    authors: "A. Rizvi, T. R. Toha, <strong>S. S. Das</strong>, S. Chellappan, A. B. M. A. Al Islam"
+    venue: IEEE International Performance Computing and Communications Conference (IPCCC) 2017
+    year: 2017
+    category: conference
+    selected: false
+
+  - title: "Evolutionary algorithm using adaptive fuzzy dominance and reference point for many-objective optimization"
+    authors: "<strong>S. S. Das</strong>, M. M. Islam, N. A. Arafat"
+    venue: Swarm and Evolutionary Computation
+    year: 2019
+    category: journal_workshop
+    selected: false
+
+  - title: "Generative AI for Advanced Cyber Defense"
+    authors: "M. Rahman, A. Sanchez, K. Piryani, <strong>S. Das</strong>, S. Munikoti, et al."
+    venue: "AI for Cybersecurity: Research and Practice (book chapter)"
+    year: 2025
+    category: journal_workshop
+    selected: false
+
+  - title: "NEPATEC v2.0: Standardized Metadata and Text Corpus of National Environmental Policy Act Documents"
+    authors: "S. Munikoti, D. M. Nally, S. D. Koneru, <strong>S. S. Das</strong>, K. Bhattacharjee, A. C. Buchko, et al."
+    venue: Pacific Northwest National Laboratory (technical report)
+    year: 2025
+    category: preprint
+    selected: false
+
+  - title: "ATT&CK to CVE: A Large-Scale Automated Knowledge Graph for Threat Intelligence"
+    authors: "M. Rahman, M. Akbar, J. T. Aguayo, M. S. Hossain, T. M. Ellis, <strong>S. S. Das</strong>, et al."
+    venue: Preprint
+    year: 2025
+    category: preprint
+    selected: false
+
+  - title: "Scaling Graph Neural Networks for Large Graphs and Analyzing Common Vulnerabilities via Large Language Models"
+    authors: "<strong>S. S. Das</strong>"
+    venue: PhD Dissertation, Purdue University
+    year: 2025
+    category: preprint
+    selected: false

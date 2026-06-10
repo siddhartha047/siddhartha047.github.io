@@ -1,0 +1,24 @@
+{% assign pub = include.pub %}
+<article class="pub">
+  <div class="pub-preview">
+    {% if pub.preview %}
+    <img src="{{ pub.preview | relative_url }}" alt="{{ pub.title }} preview" loading="lazy"
+         onerror="this.parentNode.classList.add('pub-preview-empty');this.remove()">
+    {% else %}
+    {% assign words = pub.title | split: ":" | first | split: " " %}
+    <span class="pub-preview-text">{{ words | first }}</span>
+    {% endif %}
+  </div>
+  <div class="pub-body">
+    <h3 class="pub-title">{{ pub.title }}</h3>
+    <p class="pub-authors">{{ pub.authors }}</p>
+    <p class="pub-venue"><em>{{ pub.venue }}</em>, {{ pub.year }}</p>
+    {% if pub.links and pub.links.size > 0 %}
+    <div class="pub-links">
+      {% for link in pub.links %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</article>

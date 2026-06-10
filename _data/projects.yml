@@ -1,0 +1,16 @@
+items:
+  - title: SGS-GNN
+    subtitle: Supervised Graph Sparsifier for Graph Neural Networks
+    summary: A supervised graph sparsification framework designed to preserve task-relevant structure while improving graph neural network efficiency.
+  - title: AGS-GNN
+    subtitle: Attribute-guided Graph Sparsification for Graph Neural Networks
+    summary: Graph sparsification driven by node and edge attributes to support scalable graph learning without discarding important semantic structure.
+  - title: Cybersecurity Vulnerability Mapping
+    subtitle: Vulnerability, weakness, and attack-pattern linking
+    summary: NLP and knowledge-centric methods for connecting vulnerability descriptions with weakness classes and attack behavior.
+  - title: Scientific AI / NEPA Document Intelligence
+    subtitle: AI support for scientific and document-heavy workflows
+    summary: Scientific AI systems for extracting structure, insights, and workflow support from complex technical and policy-driven document collections.
+  - title: Circuit Representation Learning and HW/SW Partitioning
+    subtitle: Graph learning for circuits and co-design
+    summary: Representation learning for circuit analysis, equivalent checking, and graph-based reasoning over hardware/software partitioning decisions.
