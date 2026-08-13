@@ -1,0 +1,15 @@
+items:
+  - degree: Ph.D. in Computer Science
+    institution: Purdue University, West Lafayette, IN, USA
+    period: Aug 2018 – May 2025
+    detail: "Advisor: Alex Pothen. Thesis: \"Scaling Graph Neural Networks for Large Graphs and Analyzing Common Vulnerabilities via Large Language Models.\" Topics: machine learning on graphs, graph neural networks, cybersecurity, large language models."
+
+  - degree: M.Sc. in Computer Science and Engineering
+    institution: Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh
+    period: Sep 2017
+    detail: "GPA: 4.00/4.00. Advisor: Md. Monirul Islam. Thesis: \"Evolutionary Algorithm Using Adaptive Fuzzy Dominance and Reference Point for Many-Objective Optimization (F-DEA).\""
+
+  - degree: B.Sc. in Computer Science and Engineering
+    institution: Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh
+    period: Jul 2014
+    detail: "GPA: 3.88/4.00 (Major: 3.99/4.00). Advisor: Md. Monirul Islam. Thesis: \"A Many-objective Evolutionary Approach Using Fuzzy Dominance with Bidirectional Bias.\""

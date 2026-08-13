@@ -1,11 +1,15 @@
 areas:
+  - title: Graph Representation Learning
+    description: Learning-based representations of graph-structured data that capture structural and attribute information for downstream prediction, sampling, and sparsification tasks.
   - title: Scalable Graph Learning
     description: Efficient machine learning methods for large graphs, with a focus on performance, scalability, and robust representation quality.
   - title: Graph Sparsification for GNNs
-    description: Structure-aware sparsification methods that retain task-relevant signal while reducing graph size and computational cost.
+    description: Structure-aware sparsification methods, including support-graph-theory-based and edge-disjoint sampling approaches, that retain task-relevant signal while reducing graph size and computational cost.
+  - title: LLM-based, Multimodal, and Agentic AI Systems
+    description: Large language model, multimodal, and agentic AI systems for document intelligence, metadata extraction, georeferencing, retrieval-augmented generation, and interactive decision support.
   - title: Cybersecurity AI
-    description: AI systems for vulnerability analysis, weakness mapping, attack pattern understanding, and security knowledge extraction.
+    description: AI systems for vulnerability analysis, weakness mapping, attack pattern understanding, cyber risk prioritization, and security knowledge extraction.
   - title: Scientific AI and High-Performance Computing
     description: Scalable AI systems for scientific workloads that benefit from strong algorithmic design and high-performance computing principles.
   - title: Hardware/Software Partitioning and Circuit Representation Learning
-    description: Graph-centric learning methods for circuit understanding, equivalent checking, and hardware/software co-design decisions.
+    description: Graph-centric and differentiable learning methods for circuit understanding, joint hardware/software partitioning, and scheduling under resource, area, and communication constraints.

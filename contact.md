@@ -13,6 +13,9 @@ description: Contact information for Siddhartha Shankar Das.
 <section class="prose-block">
   <h2>Affiliation</h2>
   <p>{{ site.data.profile.role }}, {{ site.data.profile.affiliation }}</p>
+  {% if site.data.profile.email %}
+  <p>Email: <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></p>
+  {% endif %}
   <p>{{ site.data.profile.contact_note }}</p>
 </section>
 

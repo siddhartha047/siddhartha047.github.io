@@ -4,3 +4,5 @@ _site
 .bundle
 vendor/bundle
 .DS_Store
+.jekyll-local.pid
+.jekyll-local.log

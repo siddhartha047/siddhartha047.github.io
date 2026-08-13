@@ -23,6 +23,7 @@
           "name": "{{ site.data.profile.affiliation }}"
         },
         "url": "{{ site.url }}",
+        {% if site.data.profile.email %}"email": "{{ site.data.profile.email }}",{% endif %}
         "sameAs": [
           {% for link in site.data.profile.links %}
           "{{ link.url }}"{% unless forloop.last %},{% endunless %}

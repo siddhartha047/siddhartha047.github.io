@@ -1,17 +1,22 @@
 name: Siddhartha Shankar Das
 role: Postdoctoral Researcher
 affiliation: Pacific Northwest National Laboratory
-summary: Siddhartha Shankar Das is a Postdoctoral Researcher at Pacific Northwest National Laboratory. His research focuses on scalable graph learning, graph neural networks, graph sparsification, cybersecurity, scientific AI, and high-performance computing. His work develops efficient machine learning and graph algorithms for large-scale scientific and security applications.
+summary: Siddhartha Shankar Das is a Postdoctoral Researcher at Pacific Northwest National Laboratory in the Language Intelligence group. His research spans graph representation learning, graph neural networks, graph sparsification, cybersecurity, and LLM-based agentic AI systems, with work published at KDD, DSAA, HST, and IEEE Big Data, including two best paper awards.
 bio:
-  - Siddhartha Shankar Das is a Postdoctoral Researcher at Pacific Northwest National Laboratory. His research focuses on scalable graph learning, graph neural networks, graph sparsification, cybersecurity, scientific AI, and high-performance computing. His work develops efficient machine learning and graph algorithms for large-scale scientific and security applications.
-  - He also works on hardware/software partitioning and circuit representation learning, with an emphasis on scalable methods that connect graph structure, systems constraints, and domain knowledge to practical scientific and security workloads.
+  - Siddhartha Shankar Das is a Postdoctoral Researcher at Pacific Northwest National Laboratory (PNNL) in the Language Intelligence group within the Data Science and Machine Intelligence department. His research lies in graph representation learning and graph neural networks, spanning theory, algorithms, and applications of large complex graph-structured data, with a particular focus on graph sparsification and scalable learning on large graphs.
+  - He also develops LLM-based, multimodal, and agentic AI systems for document intelligence, retrieval-augmented generation, georeferencing, and interactive decision support, and works on hardware/software partitioning and circuit representation learning, connecting graph structure, systems constraints, and domain knowledge to practical scientific and security workloads.
+  - He earned his Ph.D. in Computer Science at Purdue University, advised by Alex Pothen, with a dissertation on scaling graph neural networks for large graphs and analyzing common vulnerabilities via large language models. Before that, he completed his M.Sc. and B.Sc. in Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET), advised by Md. Monirul Islam, and served on the BUET CSE faculty as a Lecturer and Assistant Professor.
+  - During his Ph.D., he interned three summers (2019-2021) in the Data Analytics group at PNNL, mentored by Mahantesh Halappanavar, where his work on mapping software vulnerabilities to weaknesses and attack patterns received the Best Application Paper Award at DSAA 2021 and the Best Paper Award at HST 2022.
 research_focus:
-  - Scalable graph learning
+  - Graph representation learning
   - Graph neural networks
   - Graph sparsification
-  - Cybersecurity
+  - Scalable graph learning
+  - LLM & agentic AI systems
+  - Cybersecurity AI
+  - Hardware/software partitioning
   - Scientific AI
-  - High-performance computing
+email: siddhartha.das@pnnl.gov
 image: /assets/images/profile.jpg
 links:
   - label: Google Scholar
@@ -28,4 +33,4 @@ links:
     icon: fa-solid fa-globe
 cv_external: https://drive.google.com/file/d/16W38bReleQu5PI8YTFXDxWTTpACQkhz2/view?usp=sharing
 cv_local: /assets/files/Siddhartha_Das_CV.pdf
-contact_note: Please use the professional links below for now. A direct email address can be added later in this file if desired.
+contact_note: The best way to reach out is by email or through the professional profiles below.

@@ -6,9 +6,9 @@ description: Mentoring activities for Siddhartha Shankar Das.
 <section class="home-section">
   <div class="stack-list">
     {% for mentee in site.data.mentoring.items %}
-    <article class="publication-card">
+    <article class="info-card">
       <h3>{{ mentee.name }}</h3>
-      <p class="publication-meta">{{ mentee.affiliation }} · {{ mentee.period }}</p>
+      <p class="card-subtitle">{{ mentee.affiliation }} &middot; {{ mentee.period }}</p>
       <p>{{ mentee.summary }}</p>
     </article>
     {% endfor %}

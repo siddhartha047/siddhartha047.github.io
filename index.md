@@ -16,6 +16,9 @@ description: Academic homepage for Siddhartha Shankar Das, Postdoctoral Research
   <p class="profile-role">{{ site.data.profile.role }}</p>
   <p class="profile-affiliation">{{ site.data.profile.affiliation }}</p>
   <div class="social-links">
+    {% if site.data.profile.email %}
+    <a href="mailto:{{ site.data.profile.email }}" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    {% endif %}
     {% for link in site.data.profile.links %}
     <a href="{{ link.url }}" target="_blank" rel="noopener" aria-label="{{ link.label }}" title="{{ link.label }}"><i class="{{ link.icon }}"></i></a>
     {% endfor %}

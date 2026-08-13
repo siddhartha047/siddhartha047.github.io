@@ -1,16 +1,60 @@
 items:
-  - title: SGS-GNN
+  - group: Graph Learning, System Design, and Optimization
+    title: SGS-GNN
     subtitle: Supervised Graph Sparsifier for Graph Neural Networks
-    summary: A supervised graph sparsification framework designed to preserve task-relevant structure while improving graph neural network efficiency.
-  - title: AGS-GNN
+    summary: A supervised graph sparsification framework designed to preserve task-relevant structure while improving graph neural network efficiency. KDD 2026 Research Track.
+
+  - group: Graph Learning, System Design, and Optimization
+    title: AGS-GNN
     subtitle: Attribute-guided Graph Sparsification for Graph Neural Networks
-    summary: Graph sparsification driven by node and edge attributes to support scalable graph learning without discarding important semantic structure.
-  - title: Cybersecurity Vulnerability Mapping
-    subtitle: Vulnerability, weakness, and attack-pattern linking
-    summary: NLP and knowledge-centric methods for connecting vulnerability descriptions with weakness classes and attack behavior.
-  - title: Scientific AI / NEPA Document Intelligence
-    subtitle: AI support for scientific and document-heavy workflows
-    summary: Scientific AI systems for extracting structure, insights, and workflow support from complex technical and policy-driven document collections.
-  - title: Circuit Representation Learning and HW/SW Partitioning
+    summary: Graph sparsification driven by node and edge attributes to support scalable graph learning without discarding important semantic structure. ACM SIGKDD 2024.
+
+  - group: Graph Learning, System Design, and Optimization
+    title: Differentiable GNNs for Joint HW/SW Partitioning and Scheduling
     subtitle: Graph learning for circuits and co-design
-    summary: Representation learning for circuit analysis, equivalent checking, and graph-based reasoning over hardware/software partitioning decisions.
+    summary: GNN-based methods for hardware/software partitioning and scheduling under resource, area, and communication constraints, jointly modeling placement and execution order in a differentiable framework as a scalable alternative to MILP and metaheuristic methods.
+
+  - group: Graph Learning, System Design, and Optimization
+    title: Support-Graph-Theory-Based Sparsifiers
+    subtitle: Efficient learning on graphs
+    summary: Support-graph-theory-based sparsifiers for graph learning, studying how theoretically grounded sparsification can preserve important structure while accelerating GNN training and reducing computational cost.
+
+  - group: Graph Learning, System Design, and Optimization
+    title: Edge-Disjoint Graph Sampling for GNNs
+    subtitle: Scalable sampling for large-graph training
+    summary: Edge-disjoint graph sampling methods that partition large graphs into sparse subgraphs that fit into GPUs, enabling scalable and efficient GNN training and inference.
+
+  - group: NEPA, Multimodal AI, and Agentic Systems
+    title: NEPATEC 2.0
+    subtitle: Standardized metadata and text corpus of NEPA documents
+    summary: A standardized National Environmental Policy Act (NEPA) dataset that supports document intelligence tasks and has been released publicly, including on Hugging Face.
+
+  - group: NEPA, Multimodal AI, and Agentic Systems
+    title: NEPATEC 2.5
+    subtitle: Metadata extraction with geolocation and project summary
+    summary: Scalable metadata extraction for NEPA documents, including georeferencing from map images and project summarization, using multimodal large language models over heterogeneous document collections.
+
+  - group: NEPA, Multimodal AI, and Agentic Systems
+    title: PermitCE
+    subtitle: AI-assisted chat system for Categorical Exclusion documents
+    summary: Part of the PermitAI effort, an AI-assisted chat system built on retrieval-augmented generation for semantic search, recommendation, project summarization, and interactive question answering.
+
+  - group: Cybersecurity and Applied Machine Learning
+    title: Cybersecurity Vulnerability Mapping
+    subtitle: Vulnerability, weakness, and attack-pattern linking
+    summary: NLP and knowledge-centric methods (V2W-BERT, VWC-BERT) for connecting vulnerability descriptions with weakness classes (CWE) and attack behavior (CAPEC), scaled on modern AI accelerators.
+
+  - group: Cybersecurity and Applied Machine Learning
+    title: Composite Metric for Cyber Risk Prioritization
+    subtitle: Unified Composite Vulnerability Metric (CVM)
+    summary: Vulnerability prioritization by combining CVSS, CWSS, EPSS, and LEV into a unified metric that integrates severity, weakness context, exploit likelihood, and historical exploitation evidence.
+
+  - group: Cybersecurity and Applied Machine Learning
+    title: Predictive Analytics for Russet Potato Selection
+    subtitle: Interdisciplinary applied ML
+    summary: Machine learning models to support decision-making in potato breeding using historical phenotypic data, feature selection, and predictive modeling.
+
+  - group: Cybersecurity and Applied Machine Learning
+    title: USEPA Speciate Database Exploration
+    subtitle: Environmental data science with ML
+    summary: Machine learning and clustering techniques applied to the USEPA SPECIATE database to group source profiles with similar chemical species distributions for environmental analysis.
