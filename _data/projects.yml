@@ -1,60 +1,140 @@
 items:
-  - group: Graph Learning, System Design, and Optimization
-    title: SGS-GNN
-    subtitle: Supervised Graph Sparsifier for Graph Neural Networks
-    summary: A supervised graph sparsification framework designed to preserve task-relevant structure while improving graph neural network efficiency. KDD 2026 Research Track.
-
-  - group: Graph Learning, System Design, and Optimization
-    title: AGS-GNN
-    subtitle: Attribute-guided Graph Sparsification for Graph Neural Networks
-    summary: Graph sparsification driven by node and edge attributes to support scalable graph learning without discarding important semantic structure. ACM SIGKDD 2024.
-
-  - group: Graph Learning, System Design, and Optimization
-    title: Differentiable GNNs for Joint HW/SW Partitioning and Scheduling
-    subtitle: Graph learning for circuits and co-design
-    summary: GNN-based methods for hardware/software partitioning and scheduling under resource, area, and communication constraints, jointly modeling placement and execution order in a differentiable framework as a scalable alternative to MILP and metaheuristic methods.
-
-  - group: Graph Learning, System Design, and Optimization
-    title: Support-Graph-Theory-Based Sparsifiers
-    subtitle: Efficient learning on graphs
-    summary: Support-graph-theory-based sparsifiers for graph learning, studying how theoretically grounded sparsification can preserve important structure while accelerating GNN training and reducing computational cost.
-
-  - group: Graph Learning, System Design, and Optimization
-    title: Edge-Disjoint Graph Sampling for GNNs
-    subtitle: Scalable sampling for large-graph training
-    summary: Edge-disjoint graph sampling methods that partition large graphs into sparse subgraphs that fit into GPUs, enabling scalable and efficient GNN training and inference.
-
-  - group: NEPA, Multimodal AI, and Agentic Systems
-    title: NEPATEC 2.0
-    subtitle: Standardized metadata and text corpus of NEPA documents
-    summary: A standardized National Environmental Policy Act (NEPA) dataset that supports document intelligence tasks and has been released publicly, including on Hugging Face.
-
-  - group: NEPA, Multimodal AI, and Agentic Systems
-    title: NEPATEC 2.5
-    subtitle: Metadata extraction with geolocation and project summary
-    summary: Scalable metadata extraction for NEPA documents, including georeferencing from map images and project summarization, using multimodal large language models over heterogeneous document collections.
-
-  - group: NEPA, Multimodal AI, and Agentic Systems
-    title: PermitCE
-    subtitle: AI-assisted chat system for Categorical Exclusion documents
-    summary: Part of the PermitAI effort, an AI-assisted chat system built on retrieval-augmented generation for semantic search, recommendation, project summarization, and interactive question answering.
-
-  - group: Cybersecurity and Applied Machine Learning
-    title: Cybersecurity Vulnerability Mapping
-    subtitle: Vulnerability, weakness, and attack-pattern linking
-    summary: NLP and knowledge-centric methods (V2W-BERT, VWC-BERT) for connecting vulnerability descriptions with weakness classes (CWE) and attack behavior (CAPEC), scaled on modern AI accelerators.
-
-  - group: Cybersecurity and Applied Machine Learning
-    title: Composite Metric for Cyber Risk Prioritization
-    subtitle: Unified Composite Vulnerability Metric (CVM)
-    summary: Vulnerability prioritization by combining CVSS, CWSS, EPSS, and LEV into a unified metric that integrates severity, weakness context, exploit likelihood, and historical exploitation evidence.
-
-  - group: Cybersecurity and Applied Machine Learning
-    title: Predictive Analytics for Russet Potato Selection
-    subtitle: Interdisciplinary applied ML
-    summary: Machine learning models to support decision-making in potato breeding using historical phenotypic data, feature selection, and predictive modeling.
-
-  - group: Cybersecurity and Applied Machine Learning
-    title: USEPA Speciate Database Exploration
-    subtitle: Environmental data science with ML
-    summary: Machine learning and clustering techniques applied to the USEPA SPECIATE database to group source profiles with similar chemical species distributions for environmental analysis.
+- id: sparsification
+  title: Scalable graph sampling & sparsification
+  group: Graph learning & system design
+  status: Published & ongoing
+  summary: 'From attribute-guided sampling to learned sparsifiers, support graphs, and edge-disjoint decomposition:
+    develop sparse graph representations that preserve useful structure while reducing GNN computation and memory.'
+  publications:
+  - sgs-gnn
+  - scaffold
+  - edis
+  - ags-gnn
+  links:
+  - label: Code
+    url: https://github.com/siddhartha047/Scaffold
+  - label: Code
+    url: https://github.com/siddhartha047/SGS-GNN
+  - label: Code
+    url: https://github.com/siddhartha047/AGS-GNN
+- id: architecture
+  title: GNN unification & architecture generation
+  group: Graph learning & system design
+  status: Preprint & ongoing
+  summary: Use a common layer equation to compare graph neural network families and explore structurally consistent
+    architecture generation through propagation, message passing, aggregation, and transformation.
+  publications:
+  - unifying
+  links: []
+- id: codesign
+  title: Joint hardware/software partitioning & scheduling
+  group: Graph learning & system design
+  status: HPEC 2026 · accepted
+  summary: Develop differentiable GNN and reinforcement learning methods for coupled partitioning and scheduling
+    decisions in system design, accounting for resource, area, and communication constraints.
+  publications:
+  - diff-gnn
+  - hw-sw-rl
+  links: []
+- id: circuits
+  title: Graph-based circuit equivalence checking
+  group: Graph learning & system design
+  status: Ongoing
+  summary: Investigate GNN-based subcircuit identification, gate embeddings, and graph matching to support circuit
+    equivalence verification. Current research builds on graph representations of circuit structure.
+  publications: []
+  links: []
+- id: benchmarking
+  title: Graph sparsification methods & benchmarks
+  group: Graph learning & system design
+  status: Ongoing
+  summary: Develop a comprehensive textbook and benchmarking framework spanning graph sparsification, rewiring,
+    augmentation, theoretical guarantees, and applications. Compare methods across graph types and downstream learning
+    tasks.
+  publications: []
+  links:
+  - label: Related implementations
+    url: https://github.com/siddhartha047/RelatedMethods
+- id: nepatec
+  title: NEPATEC 2.0
+  group: Document intelligence & agentic AI
+  status: Public dataset
+  summary: Contributed to a standardized corpus of NEPA documents and metadata for research in environmental permitting
+    and document intelligence. The public dataset connects project, process, document, and page-level information.
+  publications:
+  - nepatec
+  links:
+  - label: Hugging Face dataset
+    url: https://huggingface.co/datasets/PNNL/NEPATEC2.0
+  - label: Technical report
+    url: https://www.pnnl.gov/publications/nepatec-v20-standardized-metadata-and-text-corpus-national-environmental-policy-act
+- id: nepatec25
+  title: 'NEPATEC 2.5: multimodal metadata extraction'
+  group: Document intelligence & agentic AI
+  status: Ongoing
+  summary: Develop multimodal LLM methods to extract metadata from heterogeneous NEPA documents, geolocate projects
+    from map images, and generate project summaries. This is ongoing work described in the October 2026 CV.
+  publications: []
+  links: []
+- id: permitce
+  title: 'PermitCE: AI-assisted document search & chat'
+  group: Document intelligence & agentic AI
+  status: Ongoing
+  summary: Build a retrieval-augmented system for NEPA categorical exclusion documents, supporting semantic search,
+    recommendations, summarization, and interactive question answering.
+  publications: []
+  links: []
+- id: cyber-mapping
+  title: Vulnerability mapping & threat intelligence
+  group: Cybersecurity & applied machine learning
+  status: Published & ongoing
+  summary: Connect CVEs with weakness classes and attack patterns using language models, and integrate security
+    repositories into knowledge graphs for multi-hop analysis. Study scalability on modern AI accelerators.
+  publications:
+  - v2w-bert
+  - vwc-map
+  - vwc-bert
+  - attack2cve
+  - genai-cyber
+  links:
+  - label: Code
+    url: https://github.com/siddhartha047/V2W-BERT
+  - label: Code
+    url: https://github.com/siddhartha047/VWC-BERT
+- id: risk
+  title: Composite metric for cyber risk prioritization
+  group: Cybersecurity & applied machine learning
+  status: Ongoing
+  summary: Develop a unified vulnerability prioritization metric that combines CVSS, CWSS, EPSS, and LEV to bring
+    severity, weakness context, exploit likelihood, and exploitation evidence into a common assessment.
+  publications: []
+  links: []
+- id: potato
+  title: Predictive analytics for russet potato selection
+  group: Cybersecurity & applied machine learning
+  status: Collaborative research
+  summary: Apply machine learning, feature selection, and predictive modeling to phenotypic data to support decision-making
+    in potato breeding.
+  publications: []
+  links: []
+- id: speciate
+  title: Machine learning for the USEPA SPECIATE database
+  group: Cybersecurity & applied machine learning
+  status: Collaborative research
+  summary: Apply clustering to chemical source profiles to identify similarities in species distributions and support
+    environmental data exploration.
+  publications: []
+  links: []
+- id: many-objective
+  title: Many-objective optimization & cluster scheduling
+  group: Earlier work
+  status: Published
+  summary: Study adaptive fuzzy dominance, evolutionary optimization, and cluster scheduling with multiple competing
+    objectives. This work connects algorithm design with practical system optimization.
+  publications:
+  - fdea
+  - greedy-nsga
+  - cluster
+  links:
+  - label: Code
+    url: https://github.com/siddhartha047/FDEA-ELSEVIER

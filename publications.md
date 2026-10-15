@@ -1,47 +1,11 @@
 ---
 title: Publications
-lead: A clean publication structure with editable placeholder entries.
-description: Publications and selected papers for Siddhartha Shankar Das.
+eyebrow: Papers, preprints & research resources
+lead: Scalable graph learning, AI for system design, cybersecurity, and document intelligence.
+description: Publications by Siddhartha Shankar Das, including KDD 2026, HPEC 2026 accepted papers, Scaffold, EDiS, AGS-GNN, and V2W-BERT, with paper, arXiv, code, and citation links.
 ---
-{% assign selected = site.data.publications.items | where_exp: "item", "item.selected" %}
-{% assign conferences = site.data.publications.items | where: "category", "conference" %}
-{% assign journals = site.data.publications.items | where: "category", "journal_workshop" %}
-{% assign preprints = site.data.publications.items | where: "category", "preprint" %}
-
-<p class="muted-copy">A full list is also available on <a href="https://scholar.google.com/citations?user=kTAFl2yYe6QC&hl=en" target="_blank" rel="noopener">Google Scholar</a>. Entries are maintained in <code>_data/publications.yml</code>.</p>
-
-<section class="home-section">
-  <div class="section-heading"><h2>Selected Publications</h2></div>
-  <div class="pub-list">
-    {% for publication in selected %}
-    {% include pub.html pub=publication %}
-    {% endfor %}
-  </div>
-</section>
-
-<section class="home-section">
-  <div class="section-heading"><h2>Conference Papers</h2></div>
-  <div class="pub-list">
-    {% for publication in conferences %}
-    {% include pub.html pub=publication %}
-    {% endfor %}
-  </div>
-</section>
-
-<section class="home-section">
-  <div class="section-heading"><h2>Journal / Workshop Papers</h2></div>
-  <div class="pub-list">
-    {% for publication in journals %}
-    {% include pub.html pub=publication %}
-    {% endfor %}
-  </div>
-</section>
-
-<section class="home-section">
-  <div class="section-heading"><h2>Preprints</h2></div>
-  <div class="pub-list">
-    {% for publication in preprints %}
-    {% include pub.html pub=publication %}
-    {% endfor %}
-  </div>
-</section>
+<div class="publication-intro"><p>Browse papers and preprints below, with summaries, figures, and research resources. Preprints and accepted papers are labeled by status.</p><div class="link-list"><a href="{{ site.data.profile.links.first.url }}" target="_blank" rel="noopener">Google Scholar ↗</a><a href="{{ '/assets/files/publications.bib' | relative_url }}" download>Download bibliography ↓</a></div></div>
+<div class="publication-tools" hidden><div class="filter-group" role="group" aria-label="Filter publications"><button class="filter-button active" data-filter="all" aria-pressed="true">All work</button><button class="filter-button" data-filter="conference,workshop" aria-pressed="false">Conference & workshop</button><button class="filter-button" data-filter="preprint" aria-pressed="false">Preprints</button><button class="filter-button" data-filter="journal,chapter,report,thesis" aria-pressed="false">Journals & more</button></div><label class="search-field"><span>Search publications</span><input type="search" id="publication-search" placeholder="Title, topic, author, year…" autocomplete="off"></label></div>
+<p class="result-count" aria-live="polite" hidden></p>
+{% assign years = site.data.publications.items | map: 'year' | uniq | sort | reverse %}{% for year in years %}<section class="publication-year" aria-label="Publications from {{ year }}"><h2 class="year-heading">{{ year }}</h2><div class="pub-list">{% for publication in site.data.publications.items %}{% if publication.year == year %}{% include pub.html pub=publication %}{% endif %}{% endfor %}</div></section>{% endfor %}
+<p class="empty-results" hidden>No publications match this search. Try another topic or select “All work.”</p><p class="source-note">Updated {{ site.data.publications.updated }}. Figure excerpts are from the linked papers. Summaries describe the individual studies; paper links provide the full methods and results.</p>

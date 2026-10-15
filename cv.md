@@ -1,19 +1,8 @@
 ---
-title: CV
-lead: Current CV access and the reserved local PDF path for future updates.
-description: CV page for Siddhartha Shankar Das.
+title: Curriculum vitae
+eyebrow: Background & experience
+lead: Research, publications, teaching, and service. Updated October 2026.
+description: Download the October 2026 CV of Siddhartha Shankar Das, including current PNNL research, publications, education, teaching, and service.
 ---
-{% assign local_cv = site.static_files | where: "path", site.data.profile.cv_local | first %}
-{% if local_cv %}
-  {% assign cv_href = site.data.profile.cv_local | relative_url %}
-{% else %}
-  {% assign cv_href = site.data.profile.cv_external %}
-{% endif %}
-
-<section class="prose-block">
-  <p>The current CV is available through the link below.</p>
-  <div class="button-row">
-    <a class="button button-primary" href="{{ cv_href }}" target="_blank" rel="noopener">Open CV</a>
-  </div>
-  <p class="muted-copy">A local file path is already reserved at <code>assets/files/Siddhartha_Das_CV.pdf</code>. Once that PDF is added, this page and the homepage CV button will use the local file automatically.</p>
-</section>
+<section class="cv-download"><div><span class="file-label">PDF · October 2026 · 5 pages</span><h2>Siddhartha Shankar Das</h2><p>Postdoctoral Researcher<br>Pacific Northwest National Laboratory</p></div><div class="button-row"><a class="button button-primary" href="{{ site.data.profile.cv_local | relative_url }}" target="_blank" rel="noopener">Open CV ↗</a><a class="button button-secondary" href="{{ site.data.profile.cv_local | relative_url }}" download="Siddhartha_Das_CV_October_2026.pdf">Download PDF ↓</a></div></section>
+<div class="cv-highlights"><div><span>Current appointment</span><strong>PNNL</strong><p>Postdoctoral Researcher<br>May 2025–present</p></div><div><span>Doctoral degree</span><strong>Purdue University</strong><p>Ph.D. in Computer Science<br>May 2025</p></div><div><span>Recognition</span><strong>Two best paper awards</strong><p>DSAA 2021 · HST 2022</p></div></div><div class="link-list"><a href="{{ '/about/' | relative_url }}">Experience & education ↗</a><a href="{{ '/publications/' | relative_url }}">Publications ↗</a><a href="{{ '/mentoring/' | relative_url }}">Teaching & mentoring ↗</a></div>

@@ -1,107 +1,461 @@
-# Publications, al-folio style (thumbnail + title/authors/venue + link badges).
-# Your own name is wrapped in <strong> so it renders in bold.
-# Per entry:
-#   preview : optional thumbnail under /assets/images/pubs/ (falls back to a placeholder)
-#   links   : optional list of { label, url } badges (PDF, arXiv, Code, ...)
-#   selected: shows the entry on the homepage
+updated: October 15, 2026
 items:
-  - title: "SGS-GNN: A Supervised Graph Sparsification method for Graph Neural Networks"
-    authors: "<strong>S. S. Das</strong>, N. A. Arafat, M. Rahman, S. M. Ferdous, A. Pothen, M. Halappanavar"
-    venue: KDD 2026 Research Track
-    year: 2026
-    category: conference
-    selected: true
-    preview: /assets/images/pubs/sgs-gnn.png
-    links:
-      - label: arXiv
-        url: https://arxiv.org/abs/2502.10208
-
-  - title: "AGS-GNN: Attribute-guided Sampling for Graph Neural Networks"
-    authors: "<strong>S. S. Das</strong>, S. M. Ferdous, M. Halappanavar, E. Serra, A. Pothen"
-    venue: ACM SIGKDD 2024
-    year: 2024
-    category: conference
-    selected: true
-    preview: /assets/images/pubs/ags-gnn.png
-
-  - title: "V2W-BERT: A Framework for Effective Hierarchical Multiclass Classification of Software Vulnerabilities"
-    authors: "<strong>S. S. Das</strong>, E. Serra, M. Halappanavar, A. Pothen, E. Al-Shaer"
-    venue: IEEE DSAA 2021
-    year: 2021
-    category: conference
-    selected: true
-    preview: /assets/images/pubs/v2w-bert.png
-    links:
-      - label: arXiv
-        url: https://arxiv.org/abs/2102.11498
-
-  - title: "VWC-BERT: Scaling Vulnerability–Weakness–Exploit Mapping on Modern AI Accelerators"
-    authors: "<strong>S. S. Das</strong>, M. Halappanavar, A. Tumeo, E. Serra, A. Pothen, E. Al-Shaer"
-    venue: IEEE International Conference on Big Data 2022
-    year: 2022
-    category: conference
-    selected: true
-    preview: /assets/images/pubs/vwc-bert.png
-
-  - title: "Towards Automatic Mapping of Vulnerabilities to Attack Patterns using Large Language Models"
-    authors: "<strong>S. S. Das</strong>, A. Dutta, S. Purohit, E. Serra, M. Halappanavar, A. Pothen"
-    venue: IEEE International Symposium on Technologies for Homeland Security (HST) 2022
-    year: 2022
-    category: conference
-    selected: false
-
-  - title: "Efficient Clustering of Software Vulnerabilities using Self Organizing Map (SOM)"
-    authors: "K. Panchal, <strong>S. S. Das</strong>, L. De La Torre, J. Miller, R. Rallo, M. Halappanavar"
-    venue: IEEE International Symposium on Technologies for Homeland Security (HST) 2022
-    year: 2022
-    category: conference
-    selected: false
-
-  - title: "Exploiting a Synergy between Greedy Approach and NSGA for Scheduling in Computing Clusters"
-    authors: "A. S. M. Rizvi, T. R. Toha, <strong>S. S. Das</strong>, S. Chellappan, A. B. M. A. Al Islam"
-    venue: International Conference on Networking, Systems and Security (NSysS) 2018
-    year: 2018
-    category: conference
-    selected: false
-
-  - title: "Many-objective performance enhancement in computing clusters"
-    authors: "A. Rizvi, T. R. Toha, <strong>S. S. Das</strong>, S. Chellappan, A. B. M. A. Al Islam"
-    venue: IEEE International Performance Computing and Communications Conference (IPCCC) 2017
-    year: 2017
-    category: conference
-    selected: false
-
-  - title: "Evolutionary algorithm using adaptive fuzzy dominance and reference point for many-objective optimization"
-    authors: "<strong>S. S. Das</strong>, M. M. Islam, N. A. Arafat"
-    venue: Swarm and Evolutionary Computation
-    year: 2019
-    category: journal_workshop
-    selected: false
-
-  - title: "Generative AI for Advanced Cyber Defense"
-    authors: "M. Rahman, A. Sanchez, K. Piryani, <strong>S. Das</strong>, S. Munikoti, et al."
-    venue: "AI for Cybersecurity: Research and Practice (book chapter)"
-    year: 2025
-    category: journal_workshop
-    selected: false
-
-  - title: "NEPATEC v2.0: Standardized Metadata and Text Corpus of National Environmental Policy Act Documents"
-    authors: "S. Munikoti, D. M. Nally, S. D. Koneru, <strong>S. S. Das</strong>, K. Bhattacharjee, A. C. Buchko, et al."
-    venue: Pacific Northwest National Laboratory (technical report)
-    year: 2025
-    category: preprint
-    selected: false
-
-  - title: "ATT&CK to CVE: A Large-Scale Automated Knowledge Graph for Threat Intelligence"
-    authors: "M. Rahman, M. Akbar, J. T. Aguayo, M. S. Hossain, T. M. Ellis, <strong>S. S. Das</strong>, et al."
-    venue: Preprint
-    year: 2025
-    category: preprint
-    selected: false
-
-  - title: "Scaling Graph Neural Networks for Large Graphs and Analyzing Common Vulnerabilities via Large Language Models"
-    authors: "<strong>S. S. Das</strong>"
-    venue: PhD Dissertation, Purdue University
-    year: 2025
-    category: preprint
-    selected: false
+- id: edis
+  title: 'EDiS: Edge Disjoint Subgraph Sparsification Framework for Graph Neural Networks'
+  authors: Sai Karthik Navuluru, <strong>Siddhartha Shankar Das</strong>, Franck Dernoncourt, S M Ferdous, Ryan
+    A. Rossi, Nesreen K. Ahmed, Baris Coskunuzer, Alex Pothen, Lakshman Tamil, and Mahantesh M Halappanavar
+  venue: arXiv:2610.09059
+  year: 2026
+  category: preprint
+  summary: Decompose a graph once, then reuse cached edge-disjoint subgraphs to compose a different sparse training
+    graph each epoch. EDiS separates structural extraction from epoch-level sampling and evaluates this approach
+    across 19 node classification benchmarks.
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2610.09059
+  - label: PDF
+    url: https://arxiv.org/pdf/2610.09059
+  selected: true
+  preview: /assets/images/pubs/edis.webp
+  figure: Figure 2 · EDiS pipeline
+  arxiv: '2610.09059'
+  topic: Graph learning
+  status: Preprint
+  date: '2026-10-06'
+  bibtex: "@misc{das_edis_2026,\n  title = {EDiS: Edge Disjoint Subgraph Sparsification Framework for Graph Neural\
+    \ Networks},\n  author = {Sai Karthik Navuluru and Siddhartha Shankar Das and Franck Dernoncourt and S M Ferdous\
+    \ and Ryan A. Rossi and Nesreen K. Ahmed and Baris Coskunuzer and Alex Pothen and Lakshman Tamil and Mahantesh\
+    \ M Halappanavar},\n  year = {2026},\n  eprint = {2610.09059},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2610.09059}\n\
+    }"
+- id: scaffold
+  title: 'Scaffold: Support Graph Theory Based Sparsification for Graph Neural Networks'
+  authors: <strong>Siddhartha Shankar Das</strong>, Sai Karthik Navuluru, S M Ferdous, Ryan A. Rossi, Baris Coskunuzer,
+    Lakshman Tamil, Edoardo Serra, Alex Pothen, Robert Rallo, and Mahantesh M Halappanavar
+  venue: arXiv:2609.31466
+  year: 2026
+  category: preprint
+  summary: An unsupervised sparsification framework that controls the length of rerouted communication paths and
+    the load they place on retained edges. Across 19 benchmarks, sparse supports retain 10–50% of edges while recovering
+    or closely approaching full-graph GNN performance.
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2609.31466
+  - label: PDF
+    url: https://arxiv.org/pdf/2609.31466
+  - label: Code
+    url: https://github.com/siddhartha047/Scaffold
+  selected: true
+  preview: /assets/images/pubs/scaffold.webp
+  figure: Figure 2 · Support-graph structure
+  arxiv: '2609.31466'
+  topic: Graph learning
+  status: Preprint
+  date: '2026-09-25'
+  bibtex: "@misc{das_scaffold_2026,\n  title = {Scaffold: Support Graph Theory Based Sparsification for Graph Neural\
+    \ Networks},\n  author = {Siddhartha Shankar Das and Sai Karthik Navuluru and S M Ferdous and Ryan A. Rossi\
+    \ and Baris Coskunuzer and Lakshman Tamil and Edoardo Serra and Alex Pothen and Robert Rallo and Mahantesh M\
+    \ Halappanavar},\n  year = {2026},\n  eprint = {2609.31466},\n  archivePrefix = {arXiv},\n  url = {https://arxiv.org/abs/2609.31466}\n\
+    }"
+- id: diff-gnn
+  title: 'Diff-GNN: Differentiable Graph Neural Networks for Joint Hardware–Software Partitioning and Scheduling'
+  authors: <strong>Siddhartha Shankar Das</strong>, Zakaria Mehrab, James Kotary, Rounak Meyur, S. M. Ferdous, Erdal
+    Mutlu, and Mahantesh Halappanavar
+  venue: IEEE High Performance Extreme Computing Conference (HPEC)
+  year: 2026
+  category: conference
+  summary: Differentiable graph learning for jointly assigning computation to hardware or software and scheduling
+    its execution. This work connects learned graph representations with system design and optimization under resource
+    and communication constraints.
+  links:
+  - label: Conference program
+    url: https://ieee-hpec.org/ieee-hpec-2026-agenda/
+  topic: AI for systems
+  status: Accepted
+  venue_short: HPEC 2026
+  note: Accepted at HPEC 2026; listed in the September 17 conference program. Public paper and code links will be
+    added when available.
+  bibtex: "@inproceedings{das_diff_gnn_2026,\n  title = {Diff-GNN: Differentiable Graph Neural Networks for Joint\
+    \ Hardware–Software Partitioning and Scheduling},\n  author = {Siddhartha Shankar Das and Zakaria Mehrab and\
+    \ James Kotary and Rounak Meyur and S. M. Ferdous and Erdal Mutlu and Mahantesh Halappanavar},\n  year = {2026},\n\
+    \  booktitle = {IEEE High Performance Extreme Computing Conference (HPEC)},\n  url = {https://ieee-hpec.org/ieee-hpec-2026-agenda/}\n\
+    }"
+- id: hw-sw-rl
+  title: Joint Optimization of HW/SW Partitioning and Scheduling with Deep Reinforcement Learning
+  authors: James Kotary, Zakaria Mehrab, <strong>Siddhartha Shankar Das</strong>, Rounak Meyur, S. M. Ferdous, Erdal
+    Mutlu, and Mahantesh Halappanavar
+  venue: IEEE High Performance Extreme Computing Conference (HPEC)
+  year: 2026
+  category: conference
+  summary: Reinforcement learning for the coupled decisions of hardware/software partitioning and task scheduling.
+    The conference program lists this work as “Joint Optimization of HW/SW Partitioning and Scheduling with Policy
+    Gradient Methods.”
+  links:
+  - label: Conference program
+    url: https://ieee-hpec.org/ieee-hpec-2026-agenda/
+  topic: AI for systems
+  status: Accepted
+  venue_short: HPEC 2026
+  note: Title follows the October 2026 CV; the official program uses the policy-gradient title. Accepted status
+    follows the CV.
+  bibtex: "@inproceedings{das_hw_sw_rl_2026,\n  title = {Joint Optimization of HW/SW Partitioning and Scheduling\
+    \ with Deep Reinforcement Learning},\n  author = {James Kotary and Zakaria Mehrab and Siddhartha Shankar Das\
+    \ and Rounak Meyur and S. M. Ferdous and Erdal Mutlu and Mahantesh Halappanavar},\n  year = {2026},\n  booktitle\
+    \ = {IEEE High Performance Extreme Computing Conference (HPEC)},\n  url = {https://ieee-hpec.org/ieee-hpec-2026-agenda/}\n\
+    }"
+- id: unifying
+  title: Unifying Graph Neural Networks Through a Common Layer Equation
+  authors: Sai Karthik Navuluru, <strong>Siddhartha Shankar Das</strong>, Bo Ni, Hongjie Chen, Yu Wang, Baris Coskunuzer,
+    Nesreen K. Ahmed, Franck Dernoncourt, Mahantesh Halappanavar, Tyler Derr, Ryan A. Rossi, and Lakshman Tamil
+  venue: arXiv:2608.16097
+  year: 2026
+  category: preprint
+  summary: A common layer equation organizes more than 200 GNN architectures into seven components. Separating propagation
+    from message transformation makes architectural similarities explicit and supports component-level comparison,
+    theoretical analysis, and architecture generation.
+  links:
+  - label: arXiv
+    url: https://arxiv.org/abs/2608.16097
+  - label: PDF
+    url: https://arxiv.org/pdf/2608.16097
+  preview: /assets/images/pubs/unifying.webp
+  figure: Figure 1 · Unified GNN design space
+  arxiv: '2608.16097'
+  topic: Graph learning
+  status: Preprint
+  date: '2026-08-17'
+  bibtex: "@misc{das_unifying_2026,\n  title = {Unifying Graph Neural Networks Through a Common Layer Equation},\n\
+    \  author = {Sai Karthik Navuluru and Siddhartha Shankar Das and Bo Ni and Hongjie Chen and Yu Wang and Baris\
+    \ Coskunuzer and Nesreen K. Ahmed and Franck Dernoncourt and Mahantesh Halappanavar and Tyler Derr and Ryan\
+    \ A. Rossi and Lakshman Tamil},\n  year = {2026},\n  eprint = {2608.16097},\n  archivePrefix = {arXiv},\n  url\
+    \ = {https://arxiv.org/abs/2608.16097}\n}"
+- id: sgs-gnn
+  title: 'SGS-GNN: A Supervised Graph Sparsifier for Graph Neural Networks'
+  authors: <strong>Siddhartha Shankar Das</strong>, Naheed Anjum Arafat, Muftiqur Rahman, S M Ferdous, Alex Pothen,
+    Mahantesh Halappanavar, and Danda B. Rawat
+  venue: Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2, pp. 755–766
+  year: 2026
+  category: conference
+  summary: Learn which graph edges matter for a downstream prediction task. SGS-GNN trains an edge probability model
+    and a GNN together to sample compact, task-relevant subgraphs, reducing memory requirements while preserving
+    predictive signal.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1145/3770855.3818110
+  - label: arXiv
+    url: https://arxiv.org/abs/2502.10208
+  - label: PDF
+    url: https://arxiv.org/pdf/2502.10208
+  - label: Code
+    url: https://github.com/siddhartha047/SGS-GNN
+  selected: true
+  preview: /assets/images/pubs/sgs-gnn.webp
+  figure: Figure 1 · SGS-GNN architecture (preprint)
+  doi: 10.1145/3770855.3818110
+  arxiv: '2502.10208'
+  topic: Graph learning
+  status: Published
+  venue_short: KDD 2026
+  note: The 2025 arXiv version has an earlier title and six authors; the citation here follows the published KDD
+    2026 paper.
+  bibtex: "@inproceedings{das_sgs_gnn_2026,\n  title = {SGS-GNN: A Supervised Graph Sparsifier for Graph Neural\
+    \ Networks},\n  author = {Siddhartha Shankar Das and Naheed Anjum Arafat and Muftiqur Rahman and S M Ferdous\
+    \ and Alex Pothen and Mahantesh Halappanavar and Danda B. Rawat},\n  year = {2026},\n  booktitle = {Proceedings\
+    \ of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2, pp. 755–766},\n  doi = {10.1145/3770855.3818110},\n\
+    \  eprint = {2502.10208},\n  archivePrefix = {arXiv},\n  url = {https://doi.org/10.1145/3770855.3818110}\n}"
+- id: attack2cve
+  title: 'ATT&CK to CVE: A Large-Scale Automated Knowledge Graph for Threat Intelligence'
+  authors: Moqsadur Rahman, Monika Akbar, Joseph T. Aguayo, Mahmud Shahriar Hossain, Tina M. Ellis, <strong>Siddhartha
+    Shankar Das</strong>, Mohammad Fakhruddin Babar, Monowar Hasan, Aaron Sanchez, Luis Fernando de la Torre, and
+    Mahantesh Halappanavar
+  venue: IEEE International Conference on Data Mining Workshops (ICDMW), GTA³ Workshop
+  year: 2025
+  category: workshop
+  summary: A continuously updated cybersecurity knowledge graph integrates CVE, CWE, CAPEC, and ATT&CK data in Neo4j.
+    Automated ingestion and typed relationships support multi-hop threat analysis and connections between adversary
+    behavior and software vulnerabilities.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1109/ICDMW69685.2025.00140
+  - label: PDF
+    url: https://monowarhasan.info/papers/attack2cve_GTA3_25.pdf
+  preview: /assets/images/pubs/attack2cve.webp
+  figure: Figure 1 · Knowledge graph pipeline
+  doi: 10.1109/ICDMW69685.2025.00140
+  topic: Cybersecurity
+  status: Published
+  venue_short: ICDMW / GTA³ 2025
+  bibtex: "@inproceedings{das_attack2cve_2025,\n  title = {ATT\\&CK to CVE: A Large-Scale Automated Knowledge Graph\
+    \ for Threat Intelligence},\n  author = {Moqsadur Rahman and Monika Akbar and Joseph T. Aguayo and Mahmud Shahriar\
+    \ Hossain and Tina M. Ellis and Siddhartha Shankar Das and Mohammad Fakhruddin Babar and Monowar Hasan and Aaron\
+    \ Sanchez and Luis Fernando de la Torre and Mahantesh Halappanavar},\n  year = {2025},\n  booktitle = {IEEE\
+    \ International Conference on Data Mining Workshops (ICDMW), GTA³ Workshop},\n  doi = {10.1109/ICDMW69685.2025.00140},\n\
+    \  url = {https://doi.org/10.1109/ICDMW69685.2025.00140}\n}"
+- id: nepatec
+  title: 'NEPATEC v2.0: Standardized Metadata and Text Corpus of National Environmental Policy Act Documents'
+  authors: Sai Munikoti, Dan Nally, Sai Dileep Koneru, <strong>Siddhartha Shankar Das</strong>, Kaustav Bhattacharjee,
+    Ashik Islam, Alex Buchko, Taylor Edwards, Kathy Nwe, Siddhisanket Raskar, Paul Rigor, Heng Wan, Micah Taylor,
+    Scott Spare, Derek Lilienthal, Mahantesh Halappanavar, Anurag Acharya, Tim Vega, Mike Parker, Anastasia Bernat,
+    and Sameera Horawalavithana
+  venue: Pacific Northwest National Laboratory, PNNL-38163
+  year: 2025
+  category: report
+  summary: A public corpus connects NEPA documents with standardized project, process, and document metadata. The
+    report describes more than 120,000 documents from roughly 60,000 projects and over 60 agencies, enabling research
+    in document intelligence and environmental permitting.
+  links:
+  - label: Report
+    url: https://www.pnnl.gov/publications/nepatec-v20-standardized-metadata-and-text-corpus-national-environmental-policy-act
+  - label: PDF
+    url: https://www.pnnl.gov/sites/default/files/media/file/PNNL_PermitAI_NEPATECv2_Public_Release_20_08_25.pdf
+  - label: Dataset
+    url: https://huggingface.co/datasets/PNNL/NEPATEC2.0
+  topic: Document intelligence
+  status: Report
+  venue_short: PNNL 2025
+  bibtex: "@techreport{das_nepatec_2025,\n  title = {NEPATEC v2.0: Standardized Metadata and Text Corpus of National\
+    \ Environmental Policy Act Documents},\n  author = {Sai Munikoti and Dan Nally and Sai Dileep Koneru and Siddhartha\
+    \ Shankar Das and Kaustav Bhattacharjee and Ashik Islam and Alex Buchko and Taylor Edwards and Kathy Nwe and\
+    \ Siddhisanket Raskar and Paul Rigor and Heng Wan and Micah Taylor and Scott Spare and Derek Lilienthal and\
+    \ Mahantesh Halappanavar and Anurag Acharya and Tim Vega and Mike Parker and Anastasia Bernat and Sameera Horawalavithana},\n\
+    \  year = {2025},\n  institution = {Pacific Northwest National Laboratory, PNNL-38163},\n  url = {https://www.pnnl.gov/publications/nepatec-v20-standardized-metadata-and-text-corpus-national-environmental-policy-act}\n\
+    }"
+- id: genai-cyber
+  title: Generative AI for Advanced Cyber Defense
+  authors: Moqsadur Rahman, Aaron Sanchez, Krish Piryani, <strong>Siddhartha Shankar Das</strong>, Sai Munikoti,
+    Luis de la Torre Quintana, Monowar Hasan, Joseph Aguayo, Monika Akbar, Shahriar Hossain, and Mahantesh Halappanavar
+  venue: 'AI for Cybersecurity: Research and Practice, John Wiley & Sons, pp. 109–146'
+  year: 2025
+  category: chapter
+  summary: A book chapter on generative AI for cyber defense, connecting language models, security knowledge, and
+    retrieval-based methods with practical cybersecurity applications.
+  links:
+  - label: Chapter
+    url: https://doi.org/10.1002/9781394293773.ch04
+  - label: Author PDF
+    url: https://monowarhasan.info/papers/GenAI4CyberDefense_WileyBookChapter_2025.pdf
+  doi: 10.1002/9781394293773.ch04
+  topic: Cybersecurity
+  status: Published
+  venue_short: Wiley 2025
+  bibtex: "@incollection{das_genai_cyber_2025,\n  title = {Generative AI for Advanced Cyber Defense},\n  author\
+    \ = {Moqsadur Rahman and Aaron Sanchez and Krish Piryani and Siddhartha Shankar Das and Sai Munikoti and Luis\
+    \ de la Torre Quintana and Monowar Hasan and Joseph Aguayo and Monika Akbar and Shahriar Hossain and Mahantesh\
+    \ Halappanavar},\n  year = {2025},\n  booktitle = {AI for Cybersecurity: Research and Practice, John Wiley \\\
+    & Sons, pp. 109–146},\n  doi = {10.1002/9781394293773.ch04},\n  url = {https://doi.org/10.1002/9781394293773.ch04}\n\
+    }"
+- id: dissertation
+  title: Scaling Graph Neural Networks for Large Graphs and Analyzing Common Vulnerabilities via Large Language
+    Models
+  authors: <strong>Siddhartha Shankar Das</strong>
+  venue: 'Ph.D. dissertation, Purdue University. Advisor: Alex Pothen'
+  year: 2025
+  category: thesis
+  summary: Doctoral research on scalable GNN sampling and sparsification, together with language-model methods for
+    vulnerability classification and analysis.
+  links:
+  - label: Dissertation
+    url: https://hammer.purdue.edu/articles/thesis/Scaling_Graph_Neural_Networks_for_Large_Graphs_and_Analyzing_Common_Vulnerabilities_via_Large_Language_Models/28856864
+  topic: Graph learning
+  status: Dissertation
+  venue_short: Purdue 2025
+  bibtex: "@phdthesis{das_dissertation_2025,\n  title = {Scaling Graph Neural Networks for Large Graphs and Analyzing\
+    \ Common Vulnerabilities via Large Language Models},\n  author = {Siddhartha Shankar Das},\n  year = {2025},\n\
+    \  school = {Purdue University},\n  url = {https://hammer.purdue.edu/articles/thesis/Scaling_Graph_Neural_Networks_for_Large_Graphs_and_Analyzing_Common_Vulnerabilities_via_Large_Language_Models/28856864}\n\
+    }"
+- id: ags-gnn
+  title: 'AGS-GNN: Attribute-guided Sampling for Graph Neural Networks'
+  authors: <strong>Siddhartha Shankar Das</strong>, S M Ferdous, Mahantesh M. Halappanavar, Edoardo Serra, and Alex
+    Pothen
+  venue: Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, pp. 538–549
+  year: 2024
+  category: conference
+  summary: Attribute-guided sampling combines feature similarity and feature diversity to learn from both homophilic
+    and heterophilic neighborhoods. Dual channels adapt to local graph structure, with evaluations on 35 small and
+    large graphs.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1145/3637528.3671940
+  - label: arXiv
+    url: https://arxiv.org/abs/2405.15218
+  - label: PDF
+    url: https://arxiv.org/pdf/2405.15218
+  - label: Code
+    url: https://github.com/siddhartha047/AGS-GNN
+  preview: /assets/images/pubs/ags-gnn.webp
+  figure: Figure 3 · Attribute-guided sampling
+  doi: 10.1145/3637528.3671940
+  arxiv: '2405.15218'
+  topic: Graph learning
+  status: Published
+  venue_short: KDD 2024
+  bibtex: "@inproceedings{das_ags_gnn_2024,\n  title = {AGS-GNN: Attribute-guided Sampling for Graph Neural Networks},\n\
+    \  author = {Siddhartha Shankar Das and S M Ferdous and Mahantesh M. Halappanavar and Edoardo Serra and Alex\
+    \ Pothen},\n  year = {2024},\n  booktitle = {Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery\
+    \ and Data Mining, pp. 538–549},\n  doi = {10.1145/3637528.3671940},\n  eprint = {2405.15218},\n  archivePrefix\
+    \ = {arXiv},\n  url = {https://doi.org/10.1145/3637528.3671940}\n}"
+- id: vwc-bert
+  title: 'VWC-BERT: Scaling Vulnerability–Weakness–Exploit Mapping on Modern AI Accelerators'
+  authors: <strong>Siddhartha Shankar Das</strong>, Mahantesh Halappanavar, Antonino Tumeo, Edoardo Serra, Alex
+    Pothen, and Ehab Al-Shaer
+  venue: IEEE International Conference on Big Data, pp. 1224–1229
+  year: 2022
+  category: conference
+  summary: Scalable language-model methods connect software vulnerabilities to weaknesses and exploits. VWC-BERT
+    studies training and inference on modern AI accelerators to make vulnerability analysis practical at larger
+    scales.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1109/BigData55660.2022.10020622
+  - label: Code
+    url: https://github.com/siddhartha047/VWC-BERT
+  doi: 10.1109/BigData55660.2022.10020622
+  topic: Cybersecurity
+  status: Published
+  venue_short: IEEE Big Data 2022
+  bibtex: "@inproceedings{das_vwc_bert_2022,\n  title = {VWC-BERT: Scaling Vulnerability–Weakness–Exploit Mapping\
+    \ on Modern AI Accelerators},\n  author = {Siddhartha Shankar Das and Mahantesh Halappanavar and Antonino Tumeo\
+    \ and Edoardo Serra and Alex Pothen and Ehab Al-Shaer},\n  year = {2022},\n  booktitle = {IEEE International\
+    \ Conference on Big Data, pp. 1224–1229},\n  doi = {10.1109/BigData55660.2022.10020622},\n  url = {https://doi.org/10.1109/BigData55660.2022.10020622}\n\
+    }"
+- id: vwc-map
+  title: Towards Automatic Mapping of Vulnerabilities to Attack Patterns Using Large Language Models
+  authors: <strong>Siddhartha Shankar Das</strong>, Ashutosh Dutta, Sumit Purohit, Edoardo Serra, Mahantesh Halappanavar,
+    and Alex Pothen
+  venue: IEEE International Symposium on Technologies for Homeland Security (HST), pp. 1–7
+  year: 2022
+  category: conference
+  summary: 'VWC-MAP links vulnerability descriptions to attack patterns through a two-tier pipeline: vulnerability-to-weakness
+    classification followed by weakness-to-attack mapping using text-to-text and link prediction methods.'
+  links:
+  - label: Paper
+    url: https://doi.org/10.1109/HST56032.2022.10025459
+  - label: PNNL summary
+    url: https://www.pnnl.gov/publications/towards-automatic-mapping-vulnerabilities-attack-patterns-using-large-language-models
+  - label: Related code
+    url: https://github.com/siddhartha047/VWC-BERT
+  doi: 10.1109/HST56032.2022.10025459
+  topic: Cybersecurity
+  status: Published
+  award: Best Paper Award · HST 2022
+  venue_short: HST 2022
+  bibtex: "@inproceedings{das_vwc_map_2022,\n  title = {Towards Automatic Mapping of Vulnerabilities to Attack Patterns\
+    \ Using Large Language Models},\n  author = {Siddhartha Shankar Das and Ashutosh Dutta and Sumit Purohit and\
+    \ Edoardo Serra and Mahantesh Halappanavar and Alex Pothen},\n  year = {2022},\n  booktitle = {IEEE International\
+    \ Symposium on Technologies for Homeland Security (HST), pp. 1–7},\n  doi = {10.1109/HST56032.2022.10025459},\n\
+    \  url = {https://doi.org/10.1109/HST56032.2022.10025459}\n}"
+- id: som
+  title: Efficient Clustering of Software Vulnerabilities using Self Organizing Map (SOM)
+  authors: K. Panchal, <strong>Siddhartha Shankar Das</strong>, L. De La Torre, J. Miller, R. Rallo, and M. Halappanavar
+  venue: IEEE International Symposium on Technologies for Homeland Security (HST), pp. 1–7
+  year: 2022
+  category: conference
+  summary: Self-organizing maps group software vulnerabilities to support the exploration and analysis of large
+    vulnerability collections.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1109/HST56032.2022.10025443
+  doi: 10.1109/HST56032.2022.10025443
+  topic: Cybersecurity
+  status: Published
+  venue_short: HST 2022
+  bibtex: "@inproceedings{das_som_2022,\n  title = {Efficient Clustering of Software Vulnerabilities using Self\
+    \ Organizing Map (SOM)},\n  author = {K. Panchal and Siddhartha Shankar Das and L. De La Torre and J. Miller\
+    \ and R. Rallo and M. Halappanavar},\n  year = {2022},\n  booktitle = {IEEE International Symposium on Technologies\
+    \ for Homeland Security (HST), pp. 1–7},\n  doi = {10.1109/HST56032.2022.10025443},\n  url = {https://doi.org/10.1109/HST56032.2022.10025443}\n\
+    }"
+- id: v2w-bert
+  title: 'V2W-BERT: A Framework for Effective Hierarchical Multiclass Classification of Software Vulnerabilities'
+  authors: <strong>Siddhartha Shankar Das</strong>, Edoardo Serra, Mahantesh Halappanavar, Alex Pothen, and Ehab
+    Al-Shaer
+  venue: IEEE International Conference on Data Science and Advanced Analytics (DSAA), pp. 1–12
+  year: 2021
+  category: conference
+  summary: A BERT-based framework maps vulnerability descriptions to a hierarchy of software weaknesses. Link prediction
+    and a reconstruction objective support classification even when labeled examples for particular weaknesses are
+    scarce.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1109/DSAA53316.2021.9564227
+  - label: arXiv
+    url: https://arxiv.org/abs/2102.11498
+  - label: PDF
+    url: https://arxiv.org/pdf/2102.11498
+  - label: Code
+    url: https://github.com/siddhartha047/V2W-BERT
+  selected: true
+  preview: /assets/images/pubs/v2w-bert.webp
+  figure: Figure 2 · V2W-BERT architecture
+  doi: 10.1109/DSAA53316.2021.9564227
+  arxiv: '2102.11498'
+  topic: Cybersecurity
+  status: Published
+  award: Best Application Paper · DSAA 2021
+  venue_short: DSAA 2021
+  bibtex: "@inproceedings{das_v2w_bert_2021,\n  title = {V2W-BERT: A Framework for Effective Hierarchical Multiclass\
+    \ Classification of Software Vulnerabilities},\n  author = {Siddhartha Shankar Das and Edoardo Serra and Mahantesh\
+    \ Halappanavar and Alex Pothen and Ehab Al-Shaer},\n  year = {2021},\n  booktitle = {IEEE International Conference\
+    \ on Data Science and Advanced Analytics (DSAA), pp. 1–12},\n  doi = {10.1109/DSAA53316.2021.9564227},\n  eprint\
+    \ = {2102.11498},\n  archivePrefix = {arXiv},\n  url = {https://doi.org/10.1109/DSAA53316.2021.9564227}\n}"
+- id: fdea
+  title: Evolutionary algorithm using adaptive fuzzy dominance and reference point for many-objective optimization
+  authors: <strong>Siddhartha Shankar Das</strong>, Md Monirul Islam, and Naheed Anjum Arafat
+  venue: Swarm and Evolutionary Computation, 44, pp. 1092–1107
+  year: 2019
+  category: journal
+  summary: An evolutionary optimization method combines adaptive fuzzy dominance and reference points to balance
+    convergence and diversity when optimizing many competing objectives.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1016/j.swevo.2018.11.003
+  - label: Code
+    url: https://github.com/siddhartha047/FDEA-ELSEVIER
+  doi: 10.1016/j.swevo.2018.11.003
+  topic: Optimization
+  status: Published
+  venue_short: Swarm and Evolutionary Computation 2019
+  bibtex: "@article{das_fdea_2019,\n  title = {Evolutionary algorithm using adaptive fuzzy dominance and reference\
+    \ point for many-objective optimization},\n  author = {Siddhartha Shankar Das and Md Monirul Islam and Naheed\
+    \ Anjum Arafat},\n  year = {2019},\n  journal = {Swarm and Evolutionary Computation, 44, pp. 1092–1107},\n \
+    \ doi = {10.1016/j.swevo.2018.11.003},\n  url = {https://doi.org/10.1016/j.swevo.2018.11.003}\n}"
+- id: greedy-nsga
+  title: Exploiting a Synergy between Greedy Approach and NSGA for Scheduling in Computing Clusters
+  authors: A. S. M. Rizvi, Tarik Reza Toha, <strong>Siddhartha Shankar Das</strong>, Sriram Chellappan, and A. B.
+    M. Alim Al Islam
+  venue: 5th International Conference on Networking, Systems and Security (NSysS), pp. 1–8
+  year: 2018
+  category: conference
+  summary: Cluster scheduling research combining greedy decisions with nondominated sorting genetic algorithms to
+    handle competing performance objectives.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1109/NSysS.2018.8631376
+  doi: 10.1109/NSysS.2018.8631376
+  topic: Optimization
+  status: Published
+  venue_short: NSysS 2018
+  bibtex: "@inproceedings{das_greedy_nsga_2018,\n  title = {Exploiting a Synergy between Greedy Approach and NSGA\
+    \ for Scheduling in Computing Clusters},\n  author = {A. S. M. Rizvi and Tarik Reza Toha and Siddhartha Shankar\
+    \ Das and Sriram Chellappan and A. B. M. Alim Al Islam},\n  year = {2018},\n  booktitle = {5th International\
+    \ Conference on Networking, Systems and Security (NSysS), pp. 1–8},\n  doi = {10.1109/NSysS.2018.8631376},\n\
+    \  url = {https://doi.org/10.1109/NSysS.2018.8631376}\n}"
+- id: cluster
+  title: Many-objective performance enhancement in computing clusters
+  authors: A. S. M. Rizvi, Tarik Reza Toha, <strong>Siddhartha Shankar Das</strong>, Sriram Chellappan, and A. B.
+    M. Alim Al Islam
+  venue: IEEE International Performance Computing and Communications Conference (IPCCC), pp. 1–2
+  year: 2017
+  category: conference
+  summary: A many-objective view of cluster performance optimization, studying scheduling decisions across multiple
+    competing system goals.
+  links:
+  - label: Paper
+    url: https://doi.org/10.1109/PCCC.2017.8280491
+  doi: 10.1109/PCCC.2017.8280491
+  topic: Optimization
+  status: Published
+  venue_short: IPCCC 2017
+  bibtex: "@inproceedings{das_cluster_2017,\n  title = {Many-objective performance enhancement in computing clusters},\n\
+    \  author = {A. S. M. Rizvi and Tarik Reza Toha and Siddhartha Shankar Das and Sriram Chellappan and A. B. M.\
+    \ Alim Al Islam},\n  year = {2017},\n  booktitle = {IEEE International Performance Computing and Communications\
+    \ Conference (IPCCC), pp. 1–2},\n  doi = {10.1109/PCCC.2017.8280491},\n  url = {https://doi.org/10.1109/PCCC.2017.8280491}\n\
+    }"

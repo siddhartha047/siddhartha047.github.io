@@ -1,83 +1,33 @@
-# Siddhartha Shankar Das Academic Website
+# Siddhartha Shankar Das — academic website
 
-This repository contains the Jekyll source for the GitHub Pages user site:
+Source for [siddhartha047.github.io](https://siddhartha047.github.io/), built with Jekyll and GitHub Pages. Content was updated against the October 2026 CV and primary publication sources on October 15, 2026.
 
-`https://siddhartha047.github.io/`
+## Preview
 
-## 1. Create the GitHub repository manually
-
-Create the repository first at:
-
-`https://github.com/new`
-
-Use these settings:
-
-1. Repository name: `siddhartha047.github.io`
-2. Visibility: `Public`
-3. Do not add a `README`
-4. Do not add a `.gitignore`
-5. Do not add a license
-
-## 2. Connect this local folder to GitHub
-
-This workspace already contains the customized site files. To connect it to the GitHub repository:
-
-```bash
-git init
-git branch -M main
-git remote add origin https://github.com/siddhartha047/siddhartha047.github.io.git
-```
-
-If `origin` already exists, update it instead:
-
-```bash
-git remote set-url origin https://github.com/siddhartha047/siddhartha047.github.io.git
-```
-
-## 3. Preview the site locally
-
-```bash
+```sh
 bundle install
 bundle exec jekyll serve
 ```
 
-Then open:
+Open the local address printed by Jekyll. To check a production build:
 
-`http://127.0.0.1:4000/`
-
-## 4. Publish to GitHub Pages
-
-```bash
-git add .
-git commit -m "Initial academic website"
-git push -u origin main
+```sh
+bundle exec jekyll build --strict_front_matter
 ```
 
-In GitHub:
+## Maintain
 
-1. Open `https://github.com/siddhartha047/siddhartha047.github.io`
-2. Go to `Settings` -> `Pages`
-3. Set `Source` to `Deploy from a branch`
-4. Select branch `main`
-5. Select folder `/(root)`
+Content lives in `_data/`: `profile.yml`, `publications.yml`, `projects.yml`, `research.yml`, `experience.yml`, `education.yml`, `news.yml`, `mentoring.yml`, `awards.yml`, and `service.yml`.
 
-The public site will then be available at:
+- Keep published papers, accepted papers, preprints, reports, and dissertations accurately labeled.
+- Add only verified public code links. Related implementations should be labeled as related code.
+- Publication figures include a caption and paper link; record source and PDF page in `assets/images/pubs/sources.json`.
+- Replace `assets/files/Siddhartha_Das_CV.pdf` when a newer CV is provided, and update the dates in `profile.yml` and `cv.md`.
+- Keep `assets/files/publications.bib` consistent with the per-paper BibTeX in `publications.yml`.
+- Publication search and category filters are progressively enhanced by `assets/js/site.js`; the complete archive remains available without JavaScript.
 
-`https://siddhartha047.github.io/`
+Primary sources and publication-title differences are documented in [docs/content-sources.md](docs/content-sources.md). The Google Site is a native Google Sites mirror and needs a corresponding content update when these records change.
 
-## 5. Maintain the content
+## Publish
 
-Most editable content lives in `_data/`:
-
-- `_data/profile.yml`
-- `_data/news.yml`
-- `_data/publications.yml`
-- `_data/research.yml`
-- `_data/projects.yml`
-- `_data/mentoring.yml`
-
-To switch the CV from Google Drive to a local PDF later, add:
-
-`assets/files/Siddhartha_Das_CV.pdf`
-
-The site is already configured to use that local PDF automatically when it exists.
+The `main` branch is the source for GitHub Pages. Build and review changes, commit them, and push `main`. Check the resulting Pages deployment before considering an update complete.

@@ -1,30 +1,7 @@
 ---
-title: Contact
-lead: Professional profiles and affiliation details.
-description: Contact information for Siddhartha Shankar Das.
+title: Get in touch
+eyebrow: Contact & professional profiles
+lead: For research collaborations, professional inquiries, and conversations about graph learning and AI systems.
+description: Contact Siddhartha Shankar Das at Pacific Northwest National Laboratory, and find his Google Scholar, GitHub, LinkedIn, and PNNL profiles.
 ---
-{% assign local_cv = site.static_files | where: "path", site.data.profile.cv_local | first %}
-{% if local_cv %}
-  {% assign cv_href = site.data.profile.cv_local | relative_url %}
-{% else %}
-  {% assign cv_href = site.data.profile.cv_external %}
-{% endif %}
-
-<section class="prose-block">
-  <h2>Affiliation</h2>
-  <p>{{ site.data.profile.role }}, {{ site.data.profile.affiliation }}</p>
-  {% if site.data.profile.email %}
-  <p>Email: <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a></p>
-  {% endif %}
-  <p>{{ site.data.profile.contact_note }}</p>
-</section>
-
-<section class="home-section">
-  <div class="section-heading"><h2>Professional links</h2></div>
-  <div class="link-list">
-    {% for link in site.data.profile.links %}
-    <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
-    {% endfor %}
-    <a href="{{ cv_href }}" target="_blank" rel="noopener">CV</a>
-  </div>
-</section>
+<div class="contact-layout"><section class="contact-primary"><p class="eyebrow">Email</p><h2><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }} ↗</a></h2><p>{{ site.data.profile.role }}<br>{{ site.data.profile.affiliation }}</p><p>Language Intelligence group<br>Data Science & Machine Intelligence</p><a class="text-link" href="{{ site.data.profile.cv_local | relative_url }}" target="_blank" rel="noopener">Curriculum vitae ↗</a></section><section class="profile-directory"><h2>Find me online</h2>{% for link in site.data.profile.links %}<a href="{{ link.url }}" target="_blank" rel="noopener"><span>{{ link.label }}</span><span aria-hidden="true">↗</span></a>{% endfor %}</section></div>

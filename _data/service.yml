@@ -1,18 +1,21 @@
 reviewer:
-  - ICML 2025
-  - KDD 2024
-  - DSAA 2023
-  - The Web Conference (formerly WWW)
-  - IEEE Transactions on Artificial Intelligence
+- ICML 2025
+- KDD 2024
+- DSAA 2023
+- The Web Conference (formerly WWW)
+- IEEE Transactions on Artificial Intelligence
 organizing:
-  - name: NSysS
-    years: [2015, 2016, 2017]
+- name: NSysS
+  years:
+  - 2015
+  - 2016
+  - 2017
 teaching:
-  - institution: Purdue University, Department of Computer Science
-    period: Aug 2018 – May 2025
-    role: Graduate Research Assistant
-    courses: "Algorithms, Data Structures, and others"
-  - institution: Bangladesh University of Engineering and Technology (BUET), Department of Computer Science and Engineering
-    period: Aug 2014 – Jul 2018
-    role: Assistant Professor / Lecturer
-    courses: "Machine Learning, Artificial Intelligence, Computer Graphics, Data Communication, and others"
+- institution: Purdue University, Department of Computer Science
+  period: Aug 2018 – May 2019
+  role: Graduate Research Assistant
+  courses: Algorithms, Data Structures, and others
+- institution: Bangladesh University of Engineering and Technology (BUET), Department of Computer Science and Engineering
+  period: Aug 2014 – Jul 2018
+  role: Assistant Professor / Lecturer
+  courses: Machine Learning, Artificial Intelligence, Computer Graphics, Data Communication, and others

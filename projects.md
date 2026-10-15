@@ -1,21 +1,9 @@
 ---
 title: Projects
-lead: Ongoing and past projects aligned with the research agenda.
-description: Projects for Siddhartha Shankar Das.
+eyebrow: From methods to applications
+lead: Current research and selected earlier work across graph learning, AI systems, and scientific applications.
+description: Current projects by Siddhartha Shankar Das in graph sparsification, GNN architectures, hardware/software co-design, circuit equivalence, NEPATEC, PermitCE, and cybersecurity.
 ---
-{% assign groups = site.data.projects.items | map: "group" | uniq %}
-{% for group in groups %}
-{% assign group_items = site.data.projects.items | where: "group", group %}
-<section class="section-block">
-  <div class="section-heading"><h2>{{ group }}</h2></div>
-  <div class="card-grid">
-    {% for project in group_items %}
-    <article class="info-card">
-      <h3>{{ project.title }}</h3>
-      <p class="card-subtitle">{{ project.subtitle }}</p>
-      <p>{{ project.summary }}</p>
-    </article>
-    {% endfor %}
-  </div>
-</section>
-{% endfor %}
+<nav class="section-nav" aria-label="Project groups"><a href="#graph-learning-system-design">Graph learning & systems</a><a href="#document-intelligence-agentic-ai">Document intelligence</a><a href="#cybersecurity-applied-machine-learning">Cybersecurity & applied ML</a></nav>
+{% assign groups = site.data.projects.items | map: 'group' | uniq %}{% for group in groups %}<section class="section-block" id="{{ group | slugify }}"><div class="section-heading"><h2>{{ group }}</h2></div><div class="project-grid">{% assign group_items = site.data.projects.items | where: 'group', group %}{% for project in group_items %}<article class="project-card" id="project-{{ project.id }}"><p class="eyebrow">{{ project.status }}</p><h3>{{ project.title }}</h3><p>{{ project.summary }}</p>{% if project.publications.size > 0 %}<div class="related-papers"><span>Related work</span>{% for id in project.publications %}{% assign pub = site.data.publications.items | where: 'id', id | first %}<a href="{{ '/publications/#' | append: id | relative_url }}">{{ pub.title | split: ':' | first }} ↗</a>{% endfor %}</div>{% endif %}{% if project.links.size > 0 %}<div class="pub-links">{% for link in project.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endfor %}</div>{% endif %}</article>{% endfor %}</div></section>{% endfor %}
+<p class="source-note">Project descriptions and status reflect the October 2026 CV. Resources are linked where a public paper, implementation, or dataset is available.</p>

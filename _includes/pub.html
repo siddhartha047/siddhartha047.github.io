@@ -1,24 +1,5 @@
 {% assign pub = include.pub %}
-<article class="pub">
-  <div class="pub-preview">
-    {% if pub.preview %}
-    <img src="{{ pub.preview | relative_url }}" alt="{{ pub.title }} preview" loading="lazy"
-         onerror="this.parentNode.classList.add('pub-preview-empty');this.remove()">
-    {% else %}
-    {% assign words = pub.title | split: ":" | first | split: " " %}
-    <span class="pub-preview-text">{{ words | first }}</span>
-    {% endif %}
-  </div>
-  <div class="pub-body">
-    <h3 class="pub-title">{{ pub.title }}</h3>
-    <p class="pub-authors">{{ pub.authors }}</p>
-    <p class="pub-venue"><em>{{ pub.venue }}</em>, {{ pub.year }}</p>
-    {% if pub.links and pub.links.size > 0 %}
-    <div class="pub-links">
-      {% for link in pub.links %}
-      <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
-      {% endfor %}
-    </div>
-    {% endif %}
-  </div>
-</article>
+<article class="pub{% if include.compact %} pub-compact{% endif %}{% unless pub.preview %} pub-no-preview{% endunless %}" id="{{ pub.id }}" data-category="{{ pub.category }}" data-search="{{ pub.title | append: ' ' | append: pub.authors | strip_html | append: ' ' | append: pub.venue | append: ' ' | append: pub.topic | append: ' ' | append: pub.year | escape }}">
+{% if pub.preview %}<figure class="pub-preview"><a href="{{ pub.links.first.url }}" target="_blank" rel="noopener" aria-label="Read {{ pub.title | escape }}"><img src="{{ pub.preview | relative_url }}" alt="{{ pub.figure | escape }} from {{ pub.title | escape }}" loading="lazy" width="900" height="440"></a><figcaption>{{ pub.figure }}</figcaption></figure>{% endif %}
+<div class="pub-body"><div class="pub-meta"><span class="venue-badge{% if pub.category == 'preprint' %} badge-preprint{% endif %}">{{ pub.venue_short | default: pub.venue }}</span>{% if pub.award %}<span class="award-badge">{{ pub.award }}</span>{% endif %}{% if pub.status == 'Accepted' %}<span class="status-badge">Accepted</span>{% endif %}</div><h3 class="pub-title"><a href="{{ pub.links.first.url }}" target="_blank" rel="noopener">{{ pub.title }}</a></h3>
+{% unless include.compact %}<p class="pub-authors">{{ pub.authors }}</p><p class="pub-venue">{{ pub.venue }} · {{ pub.year }}</p>{% endunless %}<p class="pub-summary">{{ pub.summary }}</p><div class="pub-links">{% for link in pub.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endfor %}</div>{% unless include.compact %}{% if pub.note %}<p class="pub-note">{{ pub.note }}</p>{% endif %}<details class="citation"><summary>BibTeX citation</summary><pre><code>{{ pub.bibtex | escape }}</code></pre></details>{% endunless %}</div></article>

@@ -1,25 +1,31 @@
 items:
-  - title: Postdoctoral Researcher, Data Science & Machine Intelligence
-    org: Pacific Northwest National Laboratory (PNNL), Richland, WA, USA
-    period: May 2025 – Present
-    summary: Conducts research in AI, machine learning, graph algorithms, and system design, with a focus on scalable GNN-based methods for hardware/software partitioning, scheduling, graph partitioning, and graph sparsification. Develops LLM-based, multimodal, and agentic AI systems for scientific and applied applications, including large-scale processing of environmental and regulatory documents (metadata extraction, georeferencing, project summarization, RAG, and interactive decision support).
-
-  - title: Graduate Research Assistant
-    org: Department of Computer Science, Purdue University, West Lafayette, IN, USA
-    period: Aug 2018 – May 2025
-    summary: Researched scalable graph learning, graph sparsification, and machine learning on large graphs, along with LLM-based methods for software vulnerability analysis and cyber threat understanding. Developed new sampling and sparsification methods for GNNs, leading to publications at KDD, DSAA, Big Data, and HST.
-
-  - title: Ph.D. Intern, Data Analytics
-    org: Pacific Northwest National Laboratory (PNNL), Richland, WA, USA
-    period: Summers 2019 – 2021
-    summary: "Mentored by Mahantesh Halappanavar. Developed learning-based methods for classification and analysis of software vulnerabilities, including mapping CVEs to weaknesses (CWEs) and attack patterns (CAPECs), using LLMs and NLP scaled for modern AI accelerators. Published four papers during the internship, including two best paper awards."
-
-  - title: Assistant Professor, Department of Computer Science and Engineering
-    org: Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh
-    period: Dec 2017 – Jul 2018
-    summary: University teaching, project supervision, and office administration.
-
-  - title: Lecturer, Department of Computer Science and Engineering
-    org: Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh
-    period: Aug 2014 – Dec 2017
-    summary: University teaching.
+- title: Postdoctoral Researcher, Data Science & Machine Intelligence
+  org: Pacific Northwest National Laboratory (PNNL), Richland, WA, USA
+  period: May 2025 – Present
+  summary: Conducts research in AI, machine learning, graph algorithms, and system design, with a focus on scalable
+    GNN-based methods for hardware/software partitioning, scheduling, graph partitioning, and graph sparsification.
+    Develops LLM-based, multimodal, and agentic AI systems for scientific and applied applications, including large-scale
+    processing of environmental and regulatory documents (metadata extraction, georeferencing, project summarization,
+    RAG, and interactive decision support).
+- title: Graduate Research Assistant
+  org: Department of Computer Science, Purdue University, West Lafayette, IN, USA
+  period: Aug 2018 – May 2025
+  summary: Researched scalable graph learning, graph sparsification, and machine learning on large graphs, along
+    with LLM-based methods for software vulnerability analysis and cyber threat understanding. Developed new sampling
+    and sparsification methods for GNNs, leading to publications at KDD, DSAA, Big Data, and HST.
+- title: Ph.D. Intern, Data Analytics
+  org: Pacific Northwest National Laboratory (PNNL), Richland, WA, USA
+  period: Summers 2019 – 2021
+  summary: Mentored by Mahantesh Halappanavar. Developed learning-based methods for classification and analysis
+    of software vulnerabilities, including mapping CVEs to weaknesses (CWEs) and attack patterns (CAPECs), using
+    LLMs and NLP scaled for modern AI accelerators. Published four papers during the internship, including two best
+    paper awards.
+- title: Assistant Professor, Department of Computer Science and Engineering
+  org: Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh
+  period: Dec 2017 – Jul 2018
+  summary: University teaching, project supervision, and administration. On study leave for the Ph.D. from July
+    2018 to July 2024.
+- title: Lecturer, Department of Computer Science and Engineering
+  org: Bangladesh University of Engineering and Technology (BUET), Dhaka, Bangladesh
+  period: Aug 2014 – Dec 2017
+  summary: University teaching.

@@ -1,9 +1,34 @@
 items:
-  - date: 2026
-    text: SGS-GNN accepted to KDD 2026 Research Track.
-  - date: 2026
-    text: Continuing work on graph sparsification, cybersecurity mapping, and scientific AI systems.
-  - date: 2025
-    text: Joined Pacific Northwest National Laboratory as a Postdoctoral Researcher.
-  - date: 2025
-    text: Research focuses on scalable graph learning, cybersecurity AI, scientific AI, and high-performance computing.
+- date: Oct 2026
+  text: 'EDiS is available on arXiv: edge-disjoint subgraph decomposition for sparse GNN training.'
+  url: https://arxiv.org/abs/2610.09059
+- date: Sep 2026
+  text: Scaffold is available on arXiv, with a public implementation of support-graph sparsification.
+  url: https://arxiv.org/abs/2609.31466
+- date: Sep 2026
+  text: Two works on joint hardware/software partitioning and scheduling accepted at HPEC 2026.
+  url: https://ieee-hpec.org/ieee-hpec-2026-agenda/
+- date: Aug 2026
+  text: SGS-GNN published in the KDD 2026 proceedings.
+  url: https://doi.org/10.1145/3770855.3818110
+- date: Aug 2026
+  text: 'New preprint: Unifying Graph Neural Networks Through a Common Layer Equation.'
+  url: https://arxiv.org/abs/2608.16097
+- date: '2025'
+  text: ATT&CK to CVE published in ICDM Workshops / GTA³.
+  url: https://doi.org/10.1109/ICDMW69685.2025.00140
+- date: Aug 2025
+  text: NEPATEC v2.0 report and public document corpus released.
+  url: https://www.pnnl.gov/publications/nepatec-v20-standardized-metadata-and-text-corpus-national-environmental-policy-act
+- date: May 2025
+  text: Joined Pacific Northwest National Laboratory as a Postdoctoral Researcher after completing my Ph.D. at Purdue.
+  url: https://www.pnnl.gov/people/siddhartha-shankar-das
+- date: '2024'
+  text: AGS-GNN published at ACM SIGKDD.
+  url: https://doi.org/10.1145/3637528.3671940
+- date: '2022'
+  text: Best Paper Award at IEEE HST for vulnerability-to-attack-pattern mapping.
+  url: https://doi.org/10.1109/HST56032.2022.10025459
+- date: '2021'
+  text: V2W-BERT received the DSAA Best Application Paper Award.
+  url: https://www.cs.purdue.edu/news/articles/2021/pothen_v2w-bert.html

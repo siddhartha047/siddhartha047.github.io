@@ -1,0 +1,58 @@
+[
+  {
+    "file": "scaffold.webp",
+    "source": "https://arxiv.org/abs/2609.31466",
+    "pdf_page": 3,
+    "figure": "Figure 2",
+    "credit": "Figure excerpt from the linked paper, coauthored by Siddhartha Shankar Das.",
+    "retrieved": "2026-10-15"
+  },
+  {
+    "file": "edis.webp",
+    "source": "https://arxiv.org/abs/2610.09059",
+    "pdf_page": 4,
+    "figure": "Figure 2",
+    "credit": "Figure excerpt from the linked paper, coauthored by Siddhartha Shankar Das.",
+    "retrieved": "2026-10-15"
+  },
+  {
+    "file": "unifying.webp",
+    "source": "https://arxiv.org/abs/2608.16097",
+    "pdf_page": 5,
+    "figure": "Figure 1",
+    "credit": "Figure excerpt from the linked paper, coauthored by Siddhartha Shankar Das.",
+    "retrieved": "2026-10-15"
+  },
+  {
+    "file": "sgs-gnn.webp",
+    "source": "https://arxiv.org/abs/2502.10208",
+    "pdf_page": 2,
+    "figure": "Figure 1",
+    "credit": "Figure excerpt from the linked paper, coauthored by Siddhartha Shankar Das.",
+    "retrieved": "2026-10-15"
+  },
+  {
+    "file": "ags-gnn.webp",
+    "source": "https://arxiv.org/abs/2405.15218",
+    "pdf_page": 4,
+    "figure": "Figure 3",
+    "credit": "Figure excerpt from the linked paper, coauthored by Siddhartha Shankar Das.",
+    "retrieved": "2026-10-15"
+  },
+  {
+    "file": "v2w-bert.webp",
+    "source": "https://arxiv.org/abs/2102.11498",
+    "pdf_page": 5,
+    "figure": "Figure 2",
+    "credit": "Figure excerpt from the linked paper, coauthored by Siddhartha Shankar Das.",
+    "retrieved": "2026-10-15"
+  },
+  {
+    "file": "attack2cve.webp",
+    "source": "https://monowarhasan.info/papers/attack2cve_GTA3_25.pdf",
+    "pdf_page": 3,
+    "figure": "Figure 1",
+    "credit": "Figure excerpt from the linked paper, coauthored by Siddhartha Shankar Das.",
+    "retrieved": "2026-10-15"
+  }
+]

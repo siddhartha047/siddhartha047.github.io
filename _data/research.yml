@@ -1,15 +1,61 @@
 areas:
-  - title: Graph Representation Learning
-    description: Learning-based representations of graph-structured data that capture structural and attribute information for downstream prediction, sampling, and sparsification tasks.
-  - title: Scalable Graph Learning
-    description: Efficient machine learning methods for large graphs, with a focus on performance, scalability, and robust representation quality.
-  - title: Graph Sparsification for GNNs
-    description: Structure-aware sparsification methods, including support-graph-theory-based and edge-disjoint sampling approaches, that retain task-relevant signal while reducing graph size and computational cost.
-  - title: LLM-based, Multimodal, and Agentic AI Systems
-    description: Large language model, multimodal, and agentic AI systems for document intelligence, metadata extraction, georeferencing, retrieval-augmented generation, and interactive decision support.
-  - title: Cybersecurity AI
-    description: AI systems for vulnerability analysis, weakness mapping, attack pattern understanding, cyber risk prioritization, and security knowledge extraction.
-  - title: Scientific AI and High-Performance Computing
-    description: Scalable AI systems for scientific workloads that benefit from strong algorithmic design and high-performance computing principles.
-  - title: Hardware/Software Partitioning and Circuit Representation Learning
-    description: Graph-centric and differentiable learning methods for circuit understanding, joint hardware/software partitioning, and scheduling under resource, area, and communication constraints.
+- id: graphs
+  number: '01'
+  title: Graph learning at scale
+  description: How much of a graph do we need to learn well? I design sampling and sparsification algorithms that
+    retain useful structural and attribute information while reducing computational and memory costs.
+  detail: My work spans supervised edge selection, support graph theory, and reusable edge-disjoint decompositions,
+    with attention to both homophilic and heterophilic graphs.
+  publications:
+  - sgs-gnn
+  - scaffold
+  - edis
+  - ags-gnn
+  - unifying
+  keywords:
+  - Graph neural networks
+  - Sparsification
+  - Scalable learning
+- id: systems
+  number: '02'
+  title: Learning for system design
+  description: I use graph representations and learning-based optimization to connect computation structure with
+    hardware and software design decisions.
+  detail: Current directions include differentiable hardware/software partitioning and scheduling, reinforcement
+    learning for joint optimization, and graph-based circuit equivalence checking.
+  publications:
+  - diff-gnn
+  - hw-sw-rl
+  keywords:
+  - Hardware/software co-design
+  - Scheduling
+  - Circuit learning
+- id: security
+  number: '03'
+  title: AI for cybersecurity
+  description: I develop language-model and knowledge-graph methods that connect vulnerabilities, weaknesses, attack
+    patterns, and adversary behavior.
+  detail: The aim is to make fragmented security knowledge easier to analyze at scale, from hierarchical vulnerability
+    classification to threat intelligence and risk prioritization.
+  publications:
+  - v2w-bert
+  - vwc-map
+  - vwc-bert
+  - attack2cve
+  keywords:
+  - Language models
+  - Threat intelligence
+  - Knowledge graphs
+- id: documents
+  number: '04'
+  title: Multimodal & agentic AI
+  description: I build AI systems that extract, organize, and retrieve information from large collections of scientific
+    and regulatory documents.
+  detail: Projects include the NEPATEC corpus, multimodal metadata extraction, map-based georeferencing, and retrieval-augmented
+    assistants for environmental permitting.
+  publications:
+  - nepatec
+  keywords:
+  - Document intelligence
+  - Multimodal LLMs
+  - Retrieval-augmented generation

@@ -15,6 +15,7 @@ permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   - scope:
@@ -30,3 +31,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+
+  - docs
+  - start_local.sh
+  - stop_local.sh

@@ -1,6 +1,7 @@
 ---
 title: About
-lead: Background, research agenda, and current areas of work.
+eyebrow: About me
+lead: Graph algorithms, scalable learning, and AI systems for scientific and applied domains.
 description: About Siddhartha Shankar Das and his research program.
 ---
 {% assign local_cv = site.static_files | where: "path", site.data.profile.cv_local | first %}

@@ -1,82 +1,18 @@
 ---
 layout: home
 title: Home
-description: Academic homepage for Siddhartha Shankar Das, Postdoctoral Researcher at Pacific Northwest National Laboratory.
+description: Siddhartha Shankar Das is a postdoctoral researcher at PNNL developing scalable graph learning algorithms, AI for system design, cybersecurity, and multimodal document intelligence.
 ---
-{% assign local_cv = site.static_files | where: "path", site.data.profile.cv_local | first %}
-{% if local_cv %}
-  {% assign cv_href = site.data.profile.cv_local | relative_url %}
-{% else %}
-  {% assign cv_href = site.data.profile.cv_external %}
-{% endif %}
-
-<section class="profile">
-  <img class="profile-photo" src="{{ site.data.profile.image | relative_url }}" alt="{{ site.data.profile.name }}" onerror="this.style.display='none'">
-  <h1 class="profile-name">{{ site.data.profile.name }}</h1>
-  <p class="profile-role">{{ site.data.profile.role }}</p>
-  <p class="profile-affiliation">{{ site.data.profile.affiliation }}</p>
-  <div class="social-links">
-    {% if site.data.profile.email %}
-    <a href="mailto:{{ site.data.profile.email }}" aria-label="Email" title="Email"><i class="fa-solid fa-envelope"></i></a>
-    {% endif %}
-    {% for link in site.data.profile.links %}
-    <a href="{{ link.url }}" target="_blank" rel="noopener" aria-label="{{ link.label }}" title="{{ link.label }}"><i class="{{ link.icon }}"></i></a>
-    {% endfor %}
-    <a href="{{ cv_href }}" target="_blank" rel="noopener" aria-label="CV" title="CV"><i class="fa-solid fa-file-lines"></i></a>
-  </div>
-</section>
-
-<section class="lead-block">
-  {% for paragraph in site.data.profile.bio %}
-  <p>{{ paragraph }}</p>
-  {% endfor %}
-  <ul class="tag-list">
-    {% for topic in site.data.profile.research_focus %}
-    <li>{{ topic }}</li>
-    {% endfor %}
-  </ul>
-</section>
-
-<section class="home-section">
-  <div class="section-heading">
-    <h2>News</h2>
-    <a class="text-link" href="{{ '/news/' | relative_url }}">All updates</a>
-  </div>
-  <div class="news-list">
-    {% for item in site.data.news.items limit: 4 %}
-    <div class="news-item">
-      <span class="news-date">{{ item.date }}</span>
-      <span class="news-text">{{ item.text }}</span>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="home-section">
-  <div class="section-heading">
-    <h2>Selected Publications</h2>
-    <a class="text-link" href="{{ '/publications/' | relative_url }}">All publications</a>
-  </div>
-  <div class="pub-list">
-    {% for publication in site.data.publications.items %}
-      {% if publication.selected %}
-      {% include pub.html pub=publication %}
-      {% endif %}
-    {% endfor %}
-  </div>
-</section>
-
-<section class="home-section">
-  <div class="section-heading">
-    <h2>Research</h2>
-    <a class="text-link" href="{{ '/research/' | relative_url }}">Research themes</a>
-  </div>
-  <div class="card-grid">
-    {% for area in site.data.research.areas limit: 4 %}
-    <article class="info-card">
-      <h3>{{ area.title }}</h3>
-      <p>{{ area.description }}</p>
-    </article>
-    {% endfor %}
-  </div>
-</section>
+<section class="hero"><div class="hero-copy">
+<p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Postdoctoral Researcher · PNNL</p>
+<h1>Siddhartha<br>Shankar Das<span class="name-dot">.</span></h1>
+<p class="hero-statement">Learning from structure.<br><span>Building AI that scales.</span></p>
+<p class="hero-intro">{{ site.data.profile.intro }}</p>
+<div class="button-row"><a class="button button-primary" href="{{ '/research/' | relative_url }}">Explore my research ↗</a><a class="button button-secondary" href="{{ site.data.profile.cv_local | relative_url }}" target="_blank" rel="noopener">Download CV ↓</a></div>
+<div class="hero-profiles">{% for link in site.data.profile.links limit:3 %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endfor %}<a href="mailto:{{ site.data.profile.email }}">Email ↗</a></div></div>
+<div class="hero-visual"><img class="hero-network" src="{{ '/assets/images/graph-pattern.svg' | relative_url }}" alt="" aria-hidden="true"><div class="portrait-frame"><img class="profile-photo" src="{{ site.data.profile.image | relative_url }}" alt="Portrait of Siddhartha Shankar Das" width="620" height="760" fetchpriority="high"></div><div class="affiliation-note"><span class="affiliation-symbol" aria-hidden="true">↗</span><div><strong>Pacific Northwest<br>National Laboratory</strong><span>Data Science & Machine Intelligence</span></div></div><span class="visual-caption">Graph algorithms meet machine intelligence</span></div></section>
+<section class="intro-band" aria-label="Research background"><p>I work at the intersection of <strong>graph algorithms, machine learning, and scalable AI systems</strong> — from the foundations of graph sparsification to applications in science, security, and system design.</p><a class="text-link" href="{{ '/about/' | relative_url }}">More about me ↗</a></section>
+<section class="home-section" id="research"><div class="section-heading"><div><p class="eyebrow">Research directions</p><h2>Structure. Scale. Impact.</h2></div><a class="text-link" href="{{ '/research/' | relative_url }}">Research overview ↗</a></div><div class="research-grid">{% for area in site.data.research.areas %}<a class="research-card" href="{{ '/research/#' | append: area.id | relative_url }}"><span class="card-number">{{ area.number }}</span><h3>{{ area.title }}</h3><p>{{ area.description }}</p><span class="card-arrow" aria-hidden="true">↗</span></a>{% endfor %}</div></section>
+<section class="home-section work-section"><div class="section-heading"><div><p class="eyebrow">Papers & preprints</p><h2>Selected work</h2></div><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications ↗</a></div><div class="selected-work">{% assign featured_ids = 'sgs-gnn,scaffold,edis,v2w-bert' | split: ',' %}{% for id in featured_ids %}{% assign publication = site.data.publications.items | where: 'id', id | first %}{% include pub.html pub=publication compact=true %}{% endfor %}</div></section>
+<section class="home-section updates-section"><div class="updates-intro"><p class="eyebrow">What’s new</p><h2>Recent updates</h2><p>New papers, research milestones,<br>and public releases.</p><a class="text-link" href="{{ '/news/' | relative_url }}">All updates ↗</a></div><div class="news-list">{% for item in site.data.news.items limit:4 %}<article class="news-item"><time class="news-date">{{ item.date }}</time><p><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.text }} ↗</a></p></article>{% endfor %}</div></section>
+<section class="contact-band"><div><p class="eyebrow">Let’s connect</p><h2>Good research starts<br>with a conversation.</h2><p>I welcome conversations about graph learning, AI systems,<br>and interdisciplinary research.</p></div><a class="button button-light" href="mailto:{{ site.data.profile.email }}">Get in touch ↗</a></section>
