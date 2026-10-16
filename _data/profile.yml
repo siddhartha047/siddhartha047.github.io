@@ -21,6 +21,7 @@ bio:
   vulnerability analysis. This work received the DSAA 2021 Best Application Paper Award and the HST 2022 Best Paper
   Award.
 research_focus:
+- Multi-objective & many-objective optimization
 - Graph neural networks
 - Graph sparsification
 - AI for system design

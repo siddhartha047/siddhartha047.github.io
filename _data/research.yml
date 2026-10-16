@@ -59,3 +59,32 @@ areas:
   - Document intelligence
   - Multimodal LLMs
   - Retrieval-augmented generation
+- id: optimization
+  number: '05'
+  title: Multi-objective & many-objective optimization
+  description: I design evolutionary algorithms for problems with multiple competing objectives, with a particular
+    focus on many-objective optimization and the balance between convergence toward the Pareto front and diversity
+    among solutions.
+  detail: My work includes F-DEA, which combines adaptive fuzzy dominance with reference-point guidance, and a
+    fuzzy-dominance approach with bidirectional bias developed in my undergraduate thesis. I also apply many-objective
+    methods to computing-cluster performance and scheduling, including hybrid greedy and nondominated sorting
+    approaches. This research formed the basis of my M.Sc. and B.Sc. work at BUET, advised by Md. Monirul Islam.
+  publications:
+  - fdea
+  - greedy-nsga
+  - cluster
+  keywords:
+  - Multi-objective optimization
+  - Many-objective optimization
+  - Evolutionary algorithms
+  - Fuzzy dominance
+  - Pareto convergence & diversity
+  resources:
+  - label: F-DEA implementation (jMetal)
+    url: https://github.com/siddhartha047/FDEA/tree/master/jmetal/metaheuritic/FDEA
+  - label: F-DEA author manuscript
+    url: https://github.com/siddhartha047/FDEA-ELSEVIER/blob/master/FDEA-Elsevier2018.pdf
+  - label: M.Sc. thesis
+    url: https://drive.google.com/open?id=1-hbCL9_WCNSZu0qSFklLzoJqylzHG_2k
+  - label: B.Sc. thesis
+    url: https://drive.google.com/open?id=0B-SybtAwa8vccEI0UWkybGdWVzg

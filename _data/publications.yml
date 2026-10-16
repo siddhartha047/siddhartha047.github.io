@@ -408,7 +408,9 @@ items:
   - label: Paper
     url: https://doi.org/10.1016/j.swevo.2018.11.003
   - label: Code
-    url: https://github.com/siddhartha047/FDEA-ELSEVIER
+    url: https://github.com/siddhartha047/FDEA/tree/master/jmetal/metaheuritic/FDEA
+  - label: Author manuscript
+    url: https://github.com/siddhartha047/FDEA-ELSEVIER/blob/master/FDEA-Elsevier2018.pdf
   doi: 10.1016/j.swevo.2018.11.003
   topic: Optimization
   status: Published

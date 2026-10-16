@@ -16,6 +16,6 @@ The October 2026 CV supplied by Siddhartha Shankar Das is the source for biograp
 
 ## Code and images
 
-Public repository metadata and READMEs were checked for Scaffold, SGS-GNN, AGS-GNN, V2W-BERT, VWC-BERT, and FDEA-ELSEVIER. Do not treat an unrelated fork as this author's work. No private repository is linked. EDiS and unification have paper links but no verified public implementation link as of this update.
+Public repository metadata and READMEs were checked for Scaffold, SGS-GNN, AGS-GNN, V2W-BERT, VWC-BERT, and FDEA. F-DEA implementation files are in `FDEA/jmetal/metaheuritic/FDEA`; `FDEA-ELSEVIER` contains the author manuscript and LaTeX sources. Do not treat an unrelated fork as this author's work. No private repository is linked. EDiS and unification have paper links but no verified public implementation link as of this update.
 
 Paper thumbnails are actual figure excerpts, with attribution and source page recorded in `assets/images/pubs/sources.json`. They are not synthetic representations of results. Summaries are paraphrases, not copied abstracts. The CV, bibliography, and YAML files form the shared content source for the GitHub site and Google Site update.

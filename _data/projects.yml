@@ -126,15 +126,16 @@ items:
   publications: []
   links: []
 - id: many-objective
-  title: Many-objective optimization & cluster scheduling
+  title: Multi-objective & many-objective optimization
   group: Earlier work
   status: Published
-  summary: Study adaptive fuzzy dominance, evolutionary optimization, and cluster scheduling with multiple competing
-    objectives. This work connects algorithm design with practical system optimization.
+  summary: Study multi-objective and many-objective evolutionary optimization, including adaptive fuzzy dominance,
+    reference-point guidance, and the balance between Pareto convergence and solution diversity. Apply these methods
+    to cluster performance and scheduling with competing objectives.
   publications:
   - fdea
   - greedy-nsga
   - cluster
   links:
   - label: Code
-    url: https://github.com/siddhartha047/FDEA-ELSEVIER
+    url: https://github.com/siddhartha047/FDEA/tree/master/jmetal/metaheuritic/FDEA
