@@ -54,5 +54,13 @@
     "figure": "Figure 1",
     "credit": "Figure excerpt from the linked paper, coauthored by Siddhartha Shankar Das.",
     "retrieved": "2026-10-15"
+  },
+  {
+    "file": "fdea.webp",
+    "source": "https://github.com/siddhartha047/FDEA-ELSEVIER/blob/master/FDEA-Elsevier2018.pdf",
+    "pdf_page": 9,
+    "figure": "Figure 2",
+    "credit": "Figure excerpt from the author manuscript coauthored by Siddhartha Shankar Das.",
+    "retrieved": "2026-10-15"
   }
 ]

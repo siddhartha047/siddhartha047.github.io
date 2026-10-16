@@ -1,0 +1,19 @@
+<div class="publication-index-list">
+  {% assign years = site.data.publications.items | map: 'year' | uniq | sort | reverse %}
+  {% for year in years %}
+  <section class="publication-index-year" aria-label="Research outputs from {{ year }}">
+    <h3>{{ year }}</h3>
+    <ol>
+      {% for pub in site.data.publications.items %}
+      {% if pub.year == year %}
+      <li class="publication-index-item" data-publication-id="{{ pub.id }}">
+        <a class="publication-index-title" href="{{ '/publications/#' | append: pub.id | relative_url }}">{{ pub.title }}</a>
+        <p class="publication-index-meta">{{ pub.venue_short | default: pub.venue }}{% if pub.category == 'preprint' %} · Preprint{% elsif pub.status == 'Accepted' %} · Accepted{% endif %}{% if pub.award %} · {{ pub.award }}{% endif %}</p>
+        <div class="publication-index-links">{% for link in pub.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endfor %}</div>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+</div>

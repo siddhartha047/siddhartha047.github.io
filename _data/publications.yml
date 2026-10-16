@@ -419,6 +419,8 @@ items:
     \ point for many-objective optimization},\n  author = {Siddhartha Shankar Das and Md Monirul Islam and Naheed\
     \ Anjum Arafat},\n  year = {2019},\n  journal = {Swarm and Evolutionary Computation, 44, pp. 1092–1107},\n \
     \ doi = {10.1016/j.swevo.2018.11.003},\n  url = {https://doi.org/10.1016/j.swevo.2018.11.003}\n}"
+  preview: /assets/images/pubs/fdea.webp
+  figure: Figure 2 · Preferred reference points (author manuscript)
 - id: greedy-nsga
   title: Exploiting a Synergy between Greedy Approach and NSGA for Scheduling in Computing Clusters
   authors: A. S. M. Rizvi, Tarik Reza Toha, <strong>Siddhartha Shankar Das</strong>, Sriram Chellappan, and A. B.
