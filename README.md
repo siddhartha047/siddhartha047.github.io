@@ -22,7 +22,9 @@ Content lives in `_data/`: `profile.yml`, `publications.yml`, `projects.yml`, `r
 - Keep published papers, accepted papers, preprints, reports, and dissertations accurately labeled.
 - Add only verified public code links. Related implementations should be labeled as related code.
 - Publication figures include a caption and paper link; record source and PDF page in `assets/images/pubs/sources.json`.
-- Replace `assets/files/Siddhartha_Das_CV.pdf` when a newer CV is provided, and update the dates in `profile.yml` and `cv.md`.
+- Publish only the public Overleaf edition (`PNNL-DS-October-Public.tex`), which omits personal phone and postal contact details. Keep the application CV private.
+- Replace `assets/files/Siddhartha_Das_CV_Public.pdf` and its compatibility copy `assets/files/Siddhartha_Das_CV.pdf` together. Update the dates in `profile.yml` and `cv.md`.
+- Public LaTeX sources and the privacy preflight are in `docs/public-cv/`. Run the preflight before publishing a replacement CV.
 - Keep `assets/files/publications.bib` consistent with the per-paper BibTeX in `publications.yml`.
 - Publication search and category filters are progressively enhanced by `assets/js/site.js`; the complete archive remains available without JavaScript.
 

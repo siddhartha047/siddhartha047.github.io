@@ -1,6 +1,6 @@
 # Content verification — October 15, 2026
 
-The October 2026 CV supplied by Siddhartha Shankar Das is the source for biographical details, appointment and teaching dates, accepted-paper status, ongoing project descriptions, and mentoring summary. The original CV is served at `assets/files/Siddhartha_Das_CV.pdf`.
+The October 2026 CV supplied by Siddhartha Shankar Das is the source for biographical details, appointment and teaching dates, accepted-paper status, ongoing project descriptions, and mentoring summary. The public website edition is compiled from `PNNL-DS-October-Public.tex` in Overleaf and served at `assets/files/Siddhartha_Das_CV_Public.pdf`. It omits personal telephone and postal contact information. The former `assets/files/Siddhartha_Das_CV.pdf` URL contains the same public edition for existing links. The original application CV remains private and unchanged.
 
 ## Publication checks
 
